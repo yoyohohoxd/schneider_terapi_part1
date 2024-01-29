@@ -7,16 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schneider Terapi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="{% static 'site_layout/styles.css' %}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>THIS IS A HEADER</h1>
-    </header>
+    <!--Navbar - sticky-top class, maybe change it in the fututre-->
+    <nav class="navbar navbar-expand-lg bg-body-white sticky-top>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'site_layout/EFT-logo.png' %}" alt="EFT-logo" height="100" class="ps-5">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Psykoterapi Frederiksberg</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href="#">Om Kristina</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">At starte i terapi</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Etik og kvalitetssikring</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Emotionsfokuseret psykoterapi EFT</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Emotionskompasset</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Terapi</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Priser og booking</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="body">
         {% block body %}
         {% endblock %}
     </div>
+    
     <footer>
         <h1>THIS IS A FOOTER</h1>
     </footer>
