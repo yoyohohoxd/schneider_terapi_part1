@@ -9,16 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="{% static 'site_layout/styles.css' %}" rel="stylesheet">
+    {% block script %}
+        <script src="{% static 'site_layout/layout.js' %}"></script>
+    {% endblock %}
 </head>
 <body>
-    <!--Navbar - sticky-top class, maybe change it in the fututre. On-scroll effect -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-white>
+    <!--Navbar - sticky-top class, maybe change it in the fututre. On-scroll effect bg-body-white -->
+    <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="{% static 'site_layout/EFT-logo.png' %}" alt="EFT-logo" height="100" class="ps-5">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -60,9 +63,9 @@
     </div>
     
     <!--Use https://getbootstrap.com/docs/5.3/examples/footers/ for examples-->
-    <div class="container-fluid">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
-            <div class="col mb-3 d-flex custom-light-yellow justify-content-center align-items-center">
+    <!--<div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col g-0 mb-3 d-flex custom-light-yellow justify-content-center align-items-center">
                 <h5 class="fs-1 text-center">Psykoterapi Frederiksberg</h5>
             </div>
             <div class="col mb-3 d-flex custom-dark-blue justify-content-center align-items-center">
@@ -101,6 +104,31 @@
                     <li class="nav-item mb-2">Home</li>
                     <li class="nav-item mb-2">Home</li>
                     <li class="nav-item mb-2">Home</li>
+                </ul>
+            </div>
+        </footer>
+    </div>-->
+
+    <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex justify-content-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <h5>Psykoterapi Frederiksberg</h5>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary lh-1">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary lh-1">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h5 class="border-bottom">Lokationer</h5>
+                <ul class="nav flex-column col-md-4 list-unstyled d-flex">
+                    <li>Hearthouse Amagertorv 14B, 3. sal, 1160 Kbh K</li>
+                    <li>Thorvaldensvej 12, 1871 Frederiksberg C.</li>
                 </ul>
             </div>
         </footer>
