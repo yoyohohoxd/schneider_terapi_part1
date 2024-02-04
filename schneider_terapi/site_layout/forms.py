@@ -1,5 +1,5 @@
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit, Layout
+from crispy_forms.layout import Submit, Layout, Row, Column
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from django import forms
 
@@ -37,5 +37,12 @@ class ContactForm(forms.Form):
 
         self.helper.add_input(Submit('submit', 'Indsend'))
         self.helper.layout = Layout(
-            FloatingField("name", "email", "phone_number", "message")
+            FloatingField("name", "email", "phone_number", "message"),
+            "name",
+            Row(
+                Column("email"),
+                Column("phone_number"),
+                css_class="form_row"
+            ),
+            "message"
         )
