@@ -1,4 +1,6 @@
 {% extends "site_layout/layout.html" %}
+{% load crispy_forms_tags %}
+{% crispy contact_form contact_form.helper %}
 
 {% block body %}
     <div class="container mb-5 text-center">
@@ -8,6 +10,10 @@
         <h1 class="mb-5">THIS IS THE BODY!!!</h1>
         <h1 class="mb-5">THIS IS THE BODY!!!</h1>
         <h1 class="mb-5">THIS IS THE BODY!!!</h1>
+
+        {% crispy contact_form %}
+
+
     </div>
         
 {% endblock %}

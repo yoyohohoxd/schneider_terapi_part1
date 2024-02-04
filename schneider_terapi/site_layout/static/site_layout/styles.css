@@ -27,3 +27,11 @@ html * {
 .custom-dark-blue {
     background-color: #22404A !important;
 }
+
+.asteriskField {
+    display: none;
+}
+
+#id_message {
+    height: 100px;
+}
