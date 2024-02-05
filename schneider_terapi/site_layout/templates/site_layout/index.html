@@ -1,15 +1,46 @@
 {% extends "site_layout/layout.html" %}
 {% load crispy_forms_tags %}
 {% crispy contact_form contact_form.helper %}
+{% load static %}
 
 {% block body %}
     <div class="container mb-5 text-center">
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
-        <h1 class="mb-5">THIS IS THE BODY!!!</h1>
+        
+
+            <!-- Hero - overskift sektionen  -->
+        <div class="container"> 
+            <section class="hero-banner">
+            <h1 class="hero-title">Psykoterapi Frederiksberg</h1>
+            <p class="hero-subtitle">"For at ændre følelser må du arbejde med følelser"</p>
+            <a href="#" class="btn btn-custom">Kontak mig</a>
+            </section>
+
+            <!-- velkommen til en rejse i emotionsfokuseret psykoterapi sektionen -->
+            <section class="row content">
+                <div class="col-lg-6 text-section">
+                <h2 class="content-title">Emotionsfokuseret psykoterapi</h2>
+            <p class="content-text">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
+        </div>
+        <div class="col-lg-6 image-section">
+            <img src="{% static 'site_layout/images/foto.jpg' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
+
+        </div>
+    </section>
+
+    <!-- De 5 grunde -->
+    <section class="list-container text-center">
+        <h3 class="list-title">Her er de fem grunde til du skal vælge psykoterapi</h3>
+        <ul class="list-unstyled"> 
+        <li class="list-item">Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
+        <li class="list-item">Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
+        <li class="list-item">Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
+        <li class="list-item">Styrke din selvværd, selvtillid og selvaccept.</li>
+        <li class="list-item">Udvikle dine kompetencer, potentialer og ressourcer.</li>
+        </ul>
+    </section>
+    </div>
+
+
 
         {% crispy contact_form %}
 

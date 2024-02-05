@@ -36,13 +36,13 @@ class ContactForm(forms.Form):
         self.helper.form_action = "submit_survey"
 
         self.helper.add_input(Submit('submit', 'Indsend'))
+
         self.helper.layout = Layout(
-            FloatingField("name", "email", "phone_number", "message"),
-            "name",
+            FloatingField("name"),
             Row(
-                Column("email"),
-                Column("phone_number"),
+                Column(FloatingField("email")),
+                Column(FloatingField("phone_number")),
                 css_class="form_row"
             ),
-            "message"
+            FloatingField("message")
         )
