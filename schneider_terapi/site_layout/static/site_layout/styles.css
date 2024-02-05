@@ -7,12 +7,12 @@ html * {
 }
 
 .navbar-scrolled {
-    background-color: rgba(111, 113, 114, 0.2);
+    background-color: #22404A50;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .navbar {
@@ -38,11 +38,11 @@ html * {
 
 
 /* Merge fra Mads */
-body { font-family: 'Playfair Display', serif; }
+body { font-family: 'Playfair Display', serif;}
 /* Hero er, alt det, som forekommer mellem de to linjer, title, citat og knappen */
-.hero-banner { text-align: center; padding: 3rem 0; border-top: 0.1rem solid #000; border-bottom: 0.1rem solid #000; margin-bottom: 4rem; }
-.hero-title { font-size: 6.5rem; white-space: nowrap; }
-.hero-subtitle { font-size: 3rem; font-style: italic; }
+.hero-banner { text-align: center; padding: 3rem 0; border-top: 0.1rem solid #000; border-bottom: 0.1rem solid #000; margin-bottom: 4rem; margin-top: 3rem; }
+.hero-title { font-size: 6.0rem; white-space: nowrap; }
+.hero-subtitle { font-size: 2rem; font-style: italic; }
 .btn-custom { background-color: rgb(255, 183, 0); color: black; padding: 1.5rem 2rem; font-size: 1.5rem; }
 
 /* Content er, næste sektion af siden, som består af tekst og billde på index siden */
