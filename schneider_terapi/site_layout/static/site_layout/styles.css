@@ -38,7 +38,7 @@ html * {
 
 
 /* Merge fra Mads */
-body { font-family: 'Playfair Display', serif; padding-top: 10rem; }
+body { font-family: 'Playfair Display', serif; }
 /* Hero er, alt det, som forekommer mellem de to linjer, title, citat og knappen */
 .hero-banner { text-align: center; padding: 3rem 0; border-top: 0.1rem solid #000; border-bottom: 0.1rem solid #000; margin-bottom: 4rem; }
 .hero-title { font-size: 6.5rem; white-space: nowrap; }
