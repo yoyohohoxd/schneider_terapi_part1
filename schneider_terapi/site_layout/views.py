@@ -9,3 +9,7 @@ def index(request):
     return render(request, "site_layout/index.html", {
         "contact_form": contact_form
     })
+
+# Mads: This is the view function for the EFT page
+def eft(request): 
+    return render(request, "site_layout/eft.html")
