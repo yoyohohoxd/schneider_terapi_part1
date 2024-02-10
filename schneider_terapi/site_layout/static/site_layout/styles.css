@@ -94,11 +94,11 @@ html * {
   }
   
   .list-title { 
-    font-size: calc(1.5rem + 1vw); /* Dynamisk størrelse baseret på viewport width */
+    font-size: calc(1.5rem + 1vw); 
     margin-bottom: 3rem; 
   }
   
   .list-item { 
-    font-size: calc(1rem + 0.5vw); /* Dynamisk størrelse baseret på viewport width */
+    font-size: calc(1rem + 0.5vw); 
     margin-bottom: 2rem; 
   }
