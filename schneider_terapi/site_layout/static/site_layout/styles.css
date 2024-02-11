@@ -6,12 +6,8 @@ html * {
     font-family: 'Playfair Display', serif !important;
 }
 
-.body {
-    margin-top: 118px;
-}
-
 .navbar-scrolled {
-    background-color: rgba(111, 113, 114, 0.2);
+    background-color: rgba(255, 255, 255);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -39,6 +35,15 @@ html * {
 #id_message {
     height: 100px;
 }
+
+.scrolled-down{
+    transform:translateY(-100%); 
+    transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+    transform:translateY(0); 
+    transition: all 0.3s ease-in-out;
+  }
 
 
 /* Merge fra Mads */
