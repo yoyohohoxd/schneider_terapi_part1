@@ -1,0 +1,59 @@
+{% extends "site_layout/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="container mb-5 text-center">
+    <!-- Hero - overskrift sektionen  -->
+    <section class="hero-banner">
+        <h1 class="hero-title">Emotionsfokuseret psykoterapi EFT</h1>
+        <p class="hero-subtitle">"EFT er en psykoterapi, som arbejder med følelser. EFT bygger på forskning i, hvordan følelser former vores liv. EFT støtter jer i at forstå og ændre jeres følelser i et trygt rum."</p>
+    </section>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="content-title">Følelsesbalance</h2>
+            <p class="content-text">I emotionsfokuseret psykoterapi arbejder vi med at undersøge følelser, både dem der måske fylder for meget eller for lidt. Dette for at finde ind til en indre balance, som hjælper os til at reagere mere passende, eller mere autentisk ud fra de værdier og behov vi har. </p>
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="content-title">Fokus på følelser</h2>
+            <p class="content-text">Emotionsfokuseret psykoterapi har særligt fokus på følelseslivet og ser vores følelser som vores vigtigste navigationssystem. Mange af os har lært at skrue ned for følelserne eller helt at overhøre dem. Det opdager vi måske først, når vi er kommet på afveje, væk fra os selv og andre. </p>
+        </div>
+    </div>
+    
+    <div class="full-width-image">
+        <img src="{% static 'site_layout/images/EFTbillede.jpg' %}" class="img-fluid blur-effect" alt="Beskrivende tekst" style="width: 100%; height: auto;">
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="content-title">Procesorienteret Terapi </h2>
+            <p class="content-text">I psykoterapi arbejder vi procesorienteret. Det vil sige, at vi arbejder med og belyser det, der er din virkelighed her og nu. Du vil opleve, at du bliver bedre rustet til at tage ansvar og træffe gode valg for dig selv. Psykoterapi er begyndelsen på en personlig udvikling, hvor du bl.a. lærer at skelne mellem det du har indflydelse på og det der ligger uden for din indflydelse.  </p>
+            <h2 class="content-title">Mentale Konsekvenser</h2>
+            <p class="content-text">Det kan have store konsekvenser for vores mentale helbred når vi kommer langt væk fra os selv og det komplicerer ofte kontakten til vores følelser og vores relationer til andre mennesker. Vi kan opleve konsekvenser som depression, lavt selvværd, ensomhed, angst, stress, selvskade, konflikter.</p>
+            <h2 class="content-title">Ubalance og Selvkontakt </h2>
+            <p class="content-text">Sommetider kan vi opleve, at vi følelsesmæssigt kommer 'ud af balance' eller at vi mister kontakten med os selv. </p>
+        </div> 
+        <div class="col-md-6">
+            <h2 class="content-title">Terapiområder</h2>
+            <p class="content-text">Emotionsfokuseret psykoterapi arbejder indenfor mange forskellige problemområder:</p>
+            <ul class="list-unstyled">
+                <li class="list-item"> Depression</li>
+                <li class="list-item"> Lavt selvværd</li>
+                <li class="list-item"> Uhensigtsmæssige mønstre</li>
+                <li class="list-item"> Skam og skyld</li>
+                <li class="list-item"> Tab og forandring</li>
+                <li class="list-item"> Pårørende til mennesker med misbrug </li>
+                <li class="list-item"> Oplevelsen af at have mange konflikter </li>
+                <li class="list-item"> Følelser der er svære at forstå  </li>
+                <li class="list-item"> Forældre som ønsker terapi ift. en konkret problemstilling</li>
+            </ul>
+            <div class="image-and-button-container" style="text-align: center;">
+                <img src="{% static 'site_layout/images/EFT-logo.png' %}" alt="EFT Logo" class="responsive-image" style="max-width: 30%; height: auto; display: block; margin: auto;">
+                <a href="#" class="btn btn-custom" style="display: block; margin-top: 20px; margin-left: auto; margin-right: auto;">Kontakt mig nu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% endblock %}

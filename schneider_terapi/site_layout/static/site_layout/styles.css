@@ -45,46 +45,69 @@ html * {
     transition: all 0.3s ease-in-out;
   }
 
-
-/* Merge fra Mads */
-body { font-family: 'Playfair Display', serif; }
-/* Hero er, alt det, som forekommer mellem de to linjer, title, citat og knappen */
-.hero-banner { text-align: center; padding: 3rem 0; border-top: 0.1rem solid #000; border-bottom: 0.1rem solid #000; margin-bottom: 4rem; }
-.hero-title { font-size: 6.5rem; white-space: nowrap; }
-.hero-subtitle { font-size: 3rem; font-style: italic; }
-.btn-custom { background-color: rgb(255, 183, 0); color: black; padding: 1.5rem 2rem; font-size: 1.5rem; }
-
-/* Content er, næste sektion af siden, som består af tekst og billde på index siden */
-.content { margin-top: 15rem; }
-.content-title { font-size: 2.80rem; margin-bottom: 3rem; }
-.content-text { font-size: 2rem; line-height: 1.6; }
-.responsive-image {
+/* Mads' styles */
+.hero-banner { 
+    text-align: center; 
+    padding: 3rem 0; 
+    border-top: 0.1rem solid #000; 
+    border-bottom: 0.1rem solid #000; 
+    margin-bottom: 4rem; 
+  }
+  
+  .hero-title { 
+    font-size: calc(2rem + 2vw); /* Dynamisk størrelse baseret på viewport width */
+    white-space: nowrap; 
+  }
+  
+  .hero-subtitle { 
+    font-size: calc(1rem + 1vw); 
+    font-style: italic; 
+  }
+  
+  .btn-custom { 
+    background-color: rgb(255, 183, 0); 
+    color: black; 
+    padding: 1.5rem 2rem; 
+    font-size: 1.5rem; 
+  }
+  
+  .content { 
+    margin-top: 15rem; 
+  }
+  
+  .content-title { 
+    font-size: calc(1.5rem + 1vw); 
+    margin-bottom: 3rem; 
+  }
+  
+  .content-text { 
+    font-size: calc(1rem + 0.5vw); 
+    line-height: 1.6; 
+  }
+  
+  .responsive-image {
     max-width: 70%;  
     height: auto;  
     display: block; 
     margin-left: auto;
     margin-right: 5%; 
   }
+  
+  .list-container { 
+    margin-top: 15rem; 
+    text-align: center; 
+  }
+  
+  .list-title { 
+    font-size: calc(1.5rem + 1vw); 
+    margin-bottom: 3rem; 
+  }
+  
+  .list-item { 
+    font-size: calc(1rem + 0.5vw); 
+    margin-bottom: 2rem; 
+  }
 
-/* List er, næste sektion af siden, som består af en liste / de 5 grunde og dens title, som er på index siden*/
-.list-container { margin-top: 15rem; text-align: center; }
-.list-title { font-size: 2.8rem; margin-bottom: 3rem; }
-.list-item { font-size: 2rem; margin-bottom: 2rem; }
-
-
-@media (max-width: 992px) { /* 992px er den største skærmstørrelse, som vi har brugt i dette projekt */
-  .hero-title { font-size: 4rem; }
-  .content-title, .list-title { font-size: 2rem; }
-}
-
-@media (max-width: 768px) { /* 768px er den mellemste skærmstørrelse, som vi har brugt i dette projekt */
-  .hero-title { font-size: 3.5rem; white-space: normal; } /* white-space: normal; gør, at teksten ikke længere er nowrap */
-  .content-title, .list-title { font-size: 1.75rem; }  
-  .content-text, .list-item { font-size: 1.25rem; }
-}
-
-@media (max-width: 576px) { /* 576px er den mindste skærmstørrelse, som vi har brugt i dette projekt */
-  .hero-title { font-size: 3rem; } /* white-space: normal; gør, at teksten ikke længere er nowrap */
-  .content-title, .list-title { font-size: 1.5rem; }
-  .content-text, .list-item { font-size: 1.1rem; }
-}
+  .blur-effect {
+    filter: blur(2px); 
+  }
