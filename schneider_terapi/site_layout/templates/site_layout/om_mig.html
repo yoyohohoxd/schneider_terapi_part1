@@ -1,0 +1,28 @@
+{% extends "site_layout/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="container mb-5 text-center">
+    <!-- Hero - overskrift sektionen  -->
+    <section class="hero-banner">
+        <h1 class="hero-title">Hvem er jeg?</h1>
+        <p class="hero-subtitle">"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</p>
+    </section>
+</div>
+            <!-- velkommen til en rejse i  sektionen -->
+            <section class="row content">
+                <div class="col-lg-6 text-section">
+                <h2 class="content-title">Om mig</h2>
+            <p class="content-text"> </p>
+        </div>
+        <div class="col-lg-6 image-section">
+            <img src="{% static 'site_layout/images/foto.jpg' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
+
+        </div>
+    </section>
+
+
+
+</div>
+
+{% endblock %}
