@@ -106,7 +106,23 @@ html * {
   .list-item { 
     font-size: calc(1rem + 0.5vw); 
     margin-bottom: 2rem; 
+    text-align: left;
   }
+
+  .list-item {
+    margin-bottom: 1rem; /* Tilføjer lidt plads mellem listeelementerne */
+    /* Tilføj yderligere stilarter her efter behov */
+}
+
+.text-section, .image-section {
+  margin-bottom: 2rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Justerer indholdet til venstre */
+}
 
   .blur-effect {
     filter: blur(2px); 
