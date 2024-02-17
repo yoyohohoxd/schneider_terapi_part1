@@ -4,39 +4,41 @@
 {% load static %}
 
 {% block body %}
-<div class="container mb-5 text-center">
-        
 
-   <!-- Hero - overskift sektionen  -->
-	
-	<section class="border-top border-bottom py-5">
-		<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
-		<h2 class="my-4"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></h2>
-		<a href="#" class="btn btn-custom">Kontakt mig</a>
-	</section>
+<!-- Hero - overskift sektionen  -->
+<div class="container border-top border-bottom py-5 text-center">
+	<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
+	<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
+	<a href="#" class="btn btn-custom">Kontakt mig</a>
+</div>
 
-	<!-- velkommen til en rejse i emotionsfokuseret psykoterapi sektionen -->
-	<section class="row content">
+<!-- Container med tekst til venstre og billede til højre  -->
+<div class="container mt-5">
+	<div class="row">
 		<div class="col-lg-6 text-section">
-			<h2 class="content-title">Emotionsfokuseret psykoterapi</h2>
-			<p class="content-text">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
+			<h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
+			<p class="fs-5 lh-base">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
 		</div>
 		<div class="col-lg-6 image-section">
 			<img src="{% static 'site_layout/images/foto.jpg' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
 		</div>
-	</section>
+	</div>
+</div>
 
-    <!-- De 5 grunde -->
-    <section class="list-container text-center">
-        <h3 class="list-title">Her er de fem grunde til du skal vælge psykoterapi</h3>
-        <ul class="list-unstyled"> 
-        <li class="list-item">Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
-        <li class="list-item">Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
-        <li class="list-item">Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
-        <li class="list-item">Styrke din selvværd, selvtillid og selvaccept.</li>
-        <li class="list-item">Udvikle dine kompetencer, potentialer og ressourcer.</li>
-        </ul>
-    </section>
+<img src="{% static 'site_layout/images/blob.svg' %}" class="img-fluid" alt="blob">
+
+
+<!-- De 5 grunde -->
+<div class="container mt-5 text-center">
+	<h2 class="display-6 pb-4">Her er de fem grunde til du skal vælge psykoterapi</h3>
+	<ul class="fs-5"> 
+		<li class="list-group-item pb-2"> → Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
+		<li class="list-group-item pb-2"> → Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
+		<li class="list-group-item pb-2"> → Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
+		<li class="list-group-item pb-2"> → Styrke din selvværd, selvtillid og selvaccept.</li>
+		<li class="list-group-item pb-2"> → Udvikle dine kompetencer, potentialer og ressourcer.</li>
+	</ul>
+</div>
      
   
     
@@ -62,7 +64,7 @@ function initializeSwiperRANDOMID(){
 }
 </script>
 
-<div class="container py-6">
+<div class="container my-5 py-6">
 	<div class="row align-items-center py-2">
 		<div class="col-xl-4 mb-5 text-center text-xl-start">
 
