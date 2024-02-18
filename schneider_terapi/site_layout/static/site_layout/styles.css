@@ -19,13 +19,16 @@ html * {
     font-family: 'Playfair Display', serif;
 }
 
+.custom-light-red {
+  background-color: #E0B4A4;
+}
 
 .custom-light-yellow {
     background-color: #F9DBAB;
 }
 
 .custom-dark-blue {
-    background-color: #22404A !important;
+    background-color: #22404A;
 }
 
 .asteriskField {
@@ -36,6 +39,7 @@ html * {
     height: 100px;
 }
 
+
 .scrolled-down{
     transform:translateY(-100%); 
     transition: all 0.3s ease-in-out;
@@ -43,67 +47,6 @@ html * {
 .scrolled-up{
     transform:translateY(0); 
     transition: all 0.3s ease-in-out;
-  }
-
-/* Mads' styles */
-.hero-banner { 
-    text-align: center; 
-    padding: 3rem 0; 
-    border-top: 0.1rem solid #000; 
-    border-bottom: 0.1rem solid #000; 
-    margin-bottom: 4rem; 
-  }
-  
-  .hero-title { 
-    font-size: calc(2rem + 2vw); /* Dynamisk størrelse baseret på viewport width */
-    white-space: nowrap; 
-  }
-  
-  .hero-subtitle { 
-    font-size: calc(1rem + 1vw); 
-    font-style: italic; 
-  }
-  
-  .btn-custom { 
-    background-color: #F9DBAB; 
-    color: black; 
-  }
-  
-  .content { 
-    margin-top: 15rem; 
-  }
-  
-  .content-title { 
-    font-size: calc(1.5rem + 1vw); 
-    margin-bottom: 3rem; 
-  }
-  
-  .content-text { 
-    font-size: calc(1rem + 0.5vw); 
-    line-height: 1.6; 
-  }
-  
-  .responsive-image {
-    max-width: 70%;  
-    height: auto;  
-    display: block; 
-    margin-left: auto;
-    margin-right: 5%; 
-  }
-  
-  .list-container { 
-    margin-top: 15rem; 
-    text-align: center; 
-  }
-  
-  .list-title { 
-    font-size: calc(1.5rem + 1vw); 
-    margin-bottom: 3rem; 
-  }
-  
-  .list-item { 
-    font-size: calc(1rem + 0.5vw); 
-    margin-bottom: 2rem; 
   }
 
   .blur-effect {

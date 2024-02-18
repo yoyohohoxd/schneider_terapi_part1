@@ -5,42 +5,58 @@
 
 {% block body %}
 
+
+<div class="container">
+	<div class="row">
+	  <div class="col-8">
+		<img src="https://images.unsplash.com/photo-1656614291920-80ff97b2cf35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid">
+	  </div>
+	  <div class="col-4">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		  <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+		  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  
+	  </div>
+	</div>
+  </div>
+
 <!-- Hero - overskift sektionen  -->
-<div class="container border-top border-bottom py-5 text-center">
+<div class="container border-top border-bottom border-black text-center">
 	<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
 	<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
-	<a href="#" class="btn btn-custom">Kontakt mig</a>
+	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
 </div>
 
 <!-- Container med tekst til venstre og billede til højre  -->
-<div class="container mt-5">
+<div class="container mt-5 position-relative">
 	<div class="row">
 		<div class="col-lg-6 text-section">
 			<h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
 			<p class="fs-5 lh-base">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
 		</div>
 		<div class="col-lg-6 image-section">
-			<img src="{% static 'site_layout/images/foto.jpg' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
+			<img src="{% static 'site_layout/images/udvidet_kristina.jpg' %}" class="img-fluid image" alt="Beskrivelse"> <!-- billede af Kristina -->
 		</div>
 	</div>
 </div>
 
-<img src="{% static 'site_layout/images/blob.svg' %}" class="img-fluid" alt="blob">
 
 
 <!-- De 5 grunde -->
-<div class="container mt-5 text-center">
-	<h2 class="display-6 pb-4">Her er de fem grunde til du skal vælge psykoterapi</h3>
-	<ul class="fs-5"> 
-		<li class="list-group-item pb-2"> → Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
-		<li class="list-group-item pb-2"> → Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
-		<li class="list-group-item pb-2"> → Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
-		<li class="list-group-item pb-2"> → Styrke din selvværd, selvtillid og selvaccept.</li>
-		<li class="list-group-item pb-2"> → Udvikle dine kompetencer, potentialer og ressourcer.</li>
-	</ul>
+<div class="container-fluid custom-dark-blue py-5 mt-2">
+	<div class="container mt-5 text-center text-white">
+		<!--<img src="{% static 'site_layout/images/blob.svg' %}" alt="blob" class="position-absolute">-->
+		<h2 class="display-6 pb-4">Her er de fem grunde til du skal vælge psykoterapi</h3>
+		<ul class="fs-5"> 
+			<li class="list-group-item pb-2"> · Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
+			<li class="list-group-item pb-2"> · Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
+			<li class="list-group-item pb-2"> · Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
+			<li class="list-group-item pb-2"> · Styrke din selvværd, selvtillid og selvaccept.</li>
+			<li class="list-group-item pb-2"> · Udvikle dine kompetencer, potentialer og ressourcer.</li>
+		</ul>
+	</div>
 </div>
-     
-  
+
     
 <!-- lazily load the Swiper CSS file -->
 <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -70,12 +86,12 @@ function initializeSwiperRANDOMID(){
 
 			<div class="lc-block mb-3">
 				<div editable="rich">
-					<h2 class="fw-bold display-6">Our Clients say...</h2>
+					<h2 class="fw-bold display-6">Hvad har tidligere klienter sagt om mig?</h2>
 				</div>
 			</div>
 			<div class="lc-block mb-4">
 				<div editable="rich">
-					<p class="fw-light rfs-10">Customers are Awesome. Check what our clients are saying about us.</p>
+					<p class="fw-light rfs-10">For at skabe troværdighed laver har her kommentarer fra tidligere klienter.</p>
 				</div>
 			</div>
 
@@ -87,7 +103,6 @@ function initializeSwiperRANDOMID(){
 
 		<div class="col-xl-8 position-relative">
 
-			<img src="https://cdn.livecanvas.com/media/svg/fffuel/svg-shape-11.svg" width="256" height="256" srcset="" sizes="" alt="Made by fffuel.com" class="d-none d-xl-block position-absolute top-100 start-0 translate-middle mt-n5 wp-image-2412" loading="lazy">
 
 
 
@@ -266,11 +281,14 @@ function initializeSwiperRANDOMID(){
 </div>
  
  
-  
+<div class="container-fluid custom-light-red text-center">
+	<h2 class="display-6 fw-bold py-5">Ring til mig på 26 36 20 00</h3>
+</div>
 
 
-<div>
-
+<div class="container text-center mt-2">
+	<h2 class="display-6 my-4">Kontakt mig</h2>
+	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">Har du brug for støtte og samtale? Udfyld formularen nedenfor, <br> og lad os sammen skabe et rum for forandring og trivsel.</p>
     {% crispy contact_form %}
 
 </div>
