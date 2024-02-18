@@ -127,3 +127,14 @@ html * {
   .blur-effect {
     filter: blur(2px); 
   }
+
+  /* Mads' tekst står til venstre  */
+.left-aligned-section .content-title,
+.left-aligned-section .content-text,
+.left-aligned-section .list-item {
+  text-align: left;
+}
+
+.left-aligned-section .list-item {
+  margin-bottom: 1rem; /* Tilføjer lidt plads mellem listeelementerne */
+}
