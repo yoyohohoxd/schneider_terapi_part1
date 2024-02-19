@@ -5,37 +5,50 @@
 
 {% block body %}
 
-
-<div class="container">
-	<div class="row">
-	  <div class="col-8">
-		<img src="https://images.unsplash.com/photo-1656614291920-80ff97b2cf35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid">
-	  </div>
-	  <div class="col-4">
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		  <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-		  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-	  </div>
-	</div>
-  </div>
-
-<!-- Hero - overskift sektionen  -->
-<div class="container border-top border-bottom border-black text-center">
+<!-- Hero - overskift sektionen --> 
+<div class="container border-top border-black text-center">
 	<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
 	<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
 	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
 </div>
 
-<!-- Container med tekst til venstre og billede til højre  -->
+<div class="card border-0 rounded-0 text-bg-dark">
+	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
+	<div class="card-img-overlay">
+		<div class="container text-center">
+			<div class="col-4 align-items-center">
+				<h2 class="card-title pb-2">Emotionsfokuseret psykoterapi</h2>
+				<p class="card-text fs-5 lh-base">Velkommen til en rejse i 
+					emotionsfokuseret psykoterapi, hvor vi bruger dine 
+					følelser som vejledning mod indre balance og ægte 
+					selvudtryk. Vi udforsker og balancerer dine følelser 
+					for at styrke din evne til at træffe sunde valg og 
+					navigere i livets udfordringer. Uanset din situation, 
+					er du i trygge hænder, hvor vi sammen søger dybere 
+					forståelse og personlig udvikling.</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--Container med tekst til venstre og billede til højre-->   
 <div class="container mt-5 position-relative">
 	<div class="row">
 		<div class="col-lg-6 text-section">
 			<h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
-			<p class="fs-5 lh-base">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
+			<p class="fs-5 lh-base">Velkommen til en rejse i 
+				emotionsfokuseret psykoterapi, hvor vi bruger dine 
+				følelser som vejledning mod indre balance og ægte 
+				selvudtryk. Vi udforsker og balancerer dine følelser 
+				for at styrke din evne til at træffe sunde valg og 
+				navigere i livets udfordringer. Uanset din situation, 
+				er du i trygge hænder, hvor vi sammen søger dybere 
+				forståelse og personlig udvikling.</p>
 		</div>
 		<div class="col-lg-6 image-section">
-			<img src="{% static 'site_layout/images/udvidet_kristina.jpg' %}" class="img-fluid image" alt="Beskrivelse"> <!-- billede af Kristina -->
+			<img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid image" alt="Beskrivelse"> 
 		</div>
 	</div>
 </div>
@@ -43,7 +56,7 @@
 
 
 <!-- De 5 grunde -->
-<div class="container-fluid custom-dark-blue py-5 mt-2">
+<div class="container-fluid custom-dark-blue py-5 mt-0">
 	<div class="container mt-5 text-center text-white">
 		<!--<img src="{% static 'site_layout/images/blob.svg' %}" alt="blob" class="position-absolute">-->
 		<h2 class="display-6 pb-4">Her er de fem grunde til du skal vælge psykoterapi</h3>
@@ -282,7 +295,7 @@ function initializeSwiperRANDOMID(){
  
  
 <div class="container-fluid custom-light-red text-center">
-	<h2 class="display-6 fw-bold py-5">Ring til mig på 26 36 20 00</h3>
+	<h2 class="display-6 py-5">Ring til mig på 26 36 20 00</h3>
 </div>
 
 
