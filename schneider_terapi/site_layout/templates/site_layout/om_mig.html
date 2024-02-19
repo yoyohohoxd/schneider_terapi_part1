@@ -2,37 +2,48 @@
 {% load static %}
 
 {% block body %}
-<div class="container mb-5 text-center">
-    <div class="container mb-5">
-        <section class="hero-banner">
-            <h1 class="hero-title">Hvem er jeg?</h1>
-            <p class="hero-subtitle">"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</p>
-            <a href="#" class="btn btn-custom">Kontak mig</a>
+<div class="container border-top border-bottom border-black text-center">
+	<h1 class="display-1 mb-2">Hvem er jeg?</h1>
+	<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.."</em></blockquote>
+	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+</div>
+
+<div class="container mt-5">
+    <div class="row align-items-start">
+        <div class="col-md-6">
+            <h2 class="display-6 pb-2">Om mig</h2>
+            <p class="fs-5 lh-base">Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. Jeg er uddannet folkeskolelærer og har arbejdet som lærer i 22 år. Jeg har derfor mange års erfaring med at arbejde med mennesker i et udviklingsmæssigt og relationelt fokus. Derudover har jeg et levet liv bag mig, med de udfordringer, glæder og bekymringer, der følger med at være menneske og ikke mindst forælder.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid" alt="Beskrivelse" style="max-width: 75%; height: auto;">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid custom-light-red py-5 mt-5">
+	<div class="container mt-5 text-center text-blue">
+		<h2 class="display-6 pb-4">Lær mig at kende, og jeg kan prøve hjælpe dig</h3>
+        <p class="fs-5 lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
+	</div>
+</div>
+
+    <section class=" left-aligned-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="display-6 pb-2">Uddannelse</h2>
+                <p class="fs-5 lh-base">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse:</p>
+                    <ul>
+                        <li class="list-item fs-5 lh-base">Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
+                        <li class="list-item fs-5 lh-base">Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
+                        <li class="list-item fs-5 lh-base">Eksistentiel terapi v. Vibeke Dyhrcrone</li>
+                        <li class="list-item fs-5 lh-base">Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
+                        <li class="list-item fs-5 lh-base">Den motiverende samtale - Psykiatrifonden</li>
+                    </ul>
+                 <p class="fs-5 lh-base">Jeg er medlem af Dansk Psykoterapeutforening MPF hvilket betyder, at jeg har relevant erhvervserfaring bag mig samt en godkendt, eksamineret 4-årig terapeutuddannelse.</p>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section class="row content">
-        <div class="col-lg-6 text-section">
-        <h2 class="content-title">Om mig</h2>
-    <p class="content-text">Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. Jeg er uddannet folkeskolelærer og har arbejdet som lærer i 22 år. Jeg har derfor mange års erfaring med at arbejde med mennesker i et udviklingsmæssigt og relationelt fokus. Derudover har jeg et levet liv bag mig, med de udfordringer, glæder og bekymringer, der følger med at være menneske og ikke mindst forælder.</p>
-</div>
-<div class="col-lg-6 image-section">
-    <img src="{% static 'site_layout/images/foto.jpg' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
-</div>
-</section>
-
-<section class="content-section left-aligned-section">
-    <div class="text-section">
-        <h2 class="content-title">Uddannelse</h2>
-        <p class="content-text">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse: </p>
-        <ul>
-            <li class="list-item"> Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
-            <li class="list-item"> Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
-            <li class="list-item"> Eksistentiel terapi v. Vibeke Dyhrcrone</li>
-            <li class="list-item"> Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
-            <li class="list-item"> Den motiverende samtale - Psykiatrifonden</li>
-    </ul>
-    <p class="content-text">Jeg er medlem af Dansk Psykoterapeutforening MPF hvilket betyder, at jeg har relevant erhvervserfaring bag mig samt en godkendt, eksamineret 4-årig terapeutuddannelse.  </p>
-</div>
-</section>
 
 {% endblock %}
