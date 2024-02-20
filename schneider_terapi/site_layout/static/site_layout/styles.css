@@ -39,15 +39,18 @@ html * {
     height: 100px;
 }
 
-
 .scrolled-down{
-    transform:translateY(-100%); 
-    transition: all 0.3s ease-in-out;
-  }
+  transform:translateY(-100%); 
+  transition: all 0.3s ease-in-out;
+}
 .scrolled-up{
-    transform:translateY(0); 
-    transition: all 0.3s ease-in-out;
-  }
+  transform:translateY(0); 
+  transition: all 0.3s ease-in-out;
+}
+
+#header-background {
+  background-image: url("images/udvidet_kristina2.jpg");
+}
 
 
 /* Mads' styles */
