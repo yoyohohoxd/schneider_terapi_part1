@@ -4,47 +4,312 @@
 {% load static %}
 
 {% block body %}
-    <div class="container mb-5 text-center">
-        
-
-            <!-- Hero - overskift sektionen  -->
-        <div class="container"> 
-            <section class="hero-banner">
-            <h1 class="hero-title">Psykoterapi Frederiksberg</h1>
-            <p class="hero-subtitle">"For at ændre følelser må du arbejde med følelser"</p>
-            <a href="#" class="btn btn-custom">Kontakt mig</a>
-            </section>
-
-            <!-- velkommen til en rejse i emotionsfokuseret psykoterapi sektionen -->
-            <section class="row content">
-                <div class="col-lg-6 text-section">
-                <h2 class="content-title">Emotionsfokuseret psykoterapi</h2>
-            <p class="content-text">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
-        </div>
-        <div class="col-lg-6 image-section">
-            <img src="{% static 'site_layout/images/closeup_narrow.jpg' %}" class="responsive-image" alt="Kristina Schneider"> <!-- billede af Kristina -->
-
-        </div>
-    </section>
-
-    <!-- De 5 grunde -->
-    <section class="list-container text-center">
-        <h3 class="list-title">Her er de fem grunde til du skal vælge psykoterapi</h3>
-        <ul class="list-unstyled"> 
-        <li class="list-item">Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
-        <li class="list-item">Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
-        <li class="list-item">Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
-        <li class="list-item">Styrke din selvværd, selvtillid og selvaccept.</li>
-        <li class="list-item">Udvikle dine kompetencer, potentialer og ressourcer.</li>
-        </ul>
-    </section>
-    </div>
 
 
+<div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
+	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
+	<div class="card-img-overlay">
+		<div class="container">
+			<div class="col-6 text-center mt-5">
+				<h1 class="display-4 mb-2">Psykoterapi Frederiksberg</h1>
+				<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
+				<a href="#" class="btn btn-primary btn-large mb-5">Kontakt mig</a>
+				<div class="d-none d-lg-block">
+					<h2 class="card-title pb-2 border-top pt-5">Emotionsfokuseret psykoterapi</h2>
+					<p class="card-text fs-5 lh-base">Velkommen til en rejse i 
+						emotionsfokuseret psykoterapi, hvor vi bruger dine 
+						følelser som vejledning mod indre balance og ægte 
+						selvudtryk. Vi udforsker og balancerer dine følelser 
+						for at styrke din evne til at træffe sunde valg og 
+						navigere i livets udfordringer. Uanset din situation, 
+						er du i trygge hænder, hvor vi sammen søger dybere 
+						forståelse og personlig udvikling.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-        {% crispy contact_form %}
+
+<div class="container d-xl-none">
+	<!-- Hero - overskift sektionen --> 
+	<div class="border-top border-bottom border-black text-center">
+		<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
+		<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
+		<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+	</div>
+
+	<!--Container med tekst til venstre og billede til højre-->   
+	<div class="mt-5 position-relative">
+		<div class="row">
+			<div class="col-lg-6 text-section">
+				<h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
+				<p class="fs-5 lh-base">Velkommen til en rejse i 
+					emotionsfokuseret psykoterapi, hvor vi bruger dine 
+					følelser som vejledning mod indre balance og ægte 
+					selvudtryk. Vi udforsker og balancerer dine følelser 
+					for at styrke din evne til at træffe sunde valg og 
+					navigere i livets udfordringer. Uanset din situation, 
+					er du i trygge hænder, hvor vi sammen søger dybere 
+					forståelse og personlig udvikling.</p>
+			</div>
+			<div class="col-lg-6 image-section">
+				<img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid image" alt="Beskrivelse"> 
+			</div>
+		</div>
+	</div>
+</div>
 
 
-    </div>
+<!-- De 5 grunde -->
+<div class="container-fluid custom-dark-blue py-5 mt-0">
+	<div class="container mt-5 text-center text-white">
+		<!--<img src="{% static 'site_layout/images/blob.svg' %}" alt="blob" class="position-absolute">-->
+		<h2 class="display-6 pb-4">Her er de fem grunde til du skal vælge psykoterapi</h3>
+		<ul class="fs-5"> 
+			<li class="list-group-item pb-2"> · Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
+			<li class="list-group-item pb-2"> · Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
+			<li class="list-group-item pb-2"> · Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
+			<li class="list-group-item pb-2"> · Styrke din selvværd, selvtillid og selvaccept.</li>
+			<li class="list-group-item pb-2"> · Udvikle dine kompetencer, potentialer og ressourcer.</li>
+		</ul>
+	</div>
+</div>
+
+    
+<!-- lazily load the Swiper CSS file -->
+<link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- lazily load the Swiper JS file -->
+<script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
+
+<!-- lc-needs-hard-refresh -->
+
+<script>
+function initializeSwiperRANDOMID(){
+ 	
+	    // Launch SwiperJS  
+		var swiper = new Swiper(".mySwiper-RANDOMID", {
+			grabCursor: true,
+			pagination: {
+			  el: ".swiper-pagination-RANDOMID",
+			  clickable: true,
+			},
+		});
+}
+</script>
+
+<div class="container my-5 py-6">
+	<div class="row align-items-center py-2">
+		<div class="col-xl-4 mb-5 text-center text-xl-start">
+
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<h2 class="fw-bold display-6">Hvad har tidligere klienter sagt om mig?</h2>
+				</div>
+			</div>
+			<div class="lc-block mb-4">
+				<div editable="rich">
+					<p class="fw-light rfs-10">For at skabe troværdighed laver har her kommentarer fra tidligere klienter.</p>
+				</div>
+			</div>
+
+			<div class="lc-block">
+				<a class="btn btn-primary" href="#" role="button">Learn More</a>
+			</div>
+
+		</div>
+
+		<div class="col-xl-8 position-relative">
+
+
+
+
+			<!-- Slider main container -->
+			<div class="swiper mySwiper-RANDOMID position-relative">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper mb-5">
+					<!-- Slides -->
+					<div class="swiper-slide lc-block">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:72px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=5" width="72" height="72">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">Leah H. Middaugh</p>
+
+													<p class="text-muted">Patient educator&nbsp;</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:48px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=7" width="64" height="64">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">James M. Collinsworth</p>
+
+													<p class="text-muted">Street Artist</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide lc-block">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:72px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=26" width="72" height="72">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">Amber E. Smith</p>
+
+													<p class="text-muted">Patient educator&nbsp;</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:72px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=3" width="72" height="72">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">Matthew N. Graham</p>
+
+													<p class="text-muted">Street Artist</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide lc-block">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:72px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=23" width="72" height="72">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">Leslie R. Oleary</p>
+
+													<p class="text-muted">Fashion designer</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card p-3">
+									<div class="card-body">
+										<div class="lc-block mb-4">
+											<div editable="rich">
+												<p><em class="rfs-8 text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</em></p>
+											</div>
+										</div>
+										<div class="lc-block d-inline-flex">
+											<div class="lc-block me-3" style="min-width:72px">
+												<img class="img-fluid rounded-circle " src="https://i.pravatar.cc/96?img=6" width="72" height="72">
+											</div>
+											<div class="lc-block">
+												<div editable="rich">
+
+													<p class="h5">James C. Call</p>
+
+													<p class="text-muted">Street Artist</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination-RANDOMID"></div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+ 
+ 
+<div class="container-fluid custom-light-red text-center">
+	<h2 class="display-6 py-5">Ring til mig på 26 36 20 00</h3>
+</div>
+
+
+<div class="container text-center mt-2">
+	<h2 class="display-6 my-4">Kontakt mig</h2>
+	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">Har du brug for støtte og samtale? Udfyld formularen nedenfor, <br> og lad os sammen skabe et rum for forandring og trivsel.</p>
+    {% crispy contact_form %}
+
+</div>
         
 {% endblock %}
