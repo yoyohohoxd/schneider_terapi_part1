@@ -33,7 +33,7 @@ class ContactForm(forms.Form):
         self.helper.form_id = "contact_form"
         self.helper.form_class = "blueForms"
         self.helper.form_method = "post"
-        self.helper.form_action = "submit_survey"
+        self.helper.form_action = "index"
 
         self.helper.add_input(Submit('submit', 'Indsend'))
 
