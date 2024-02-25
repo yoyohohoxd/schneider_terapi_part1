@@ -2,10 +2,25 @@
 {% load static %}
 
 {% block body %}
+<div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
+	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
+	<div class="card-img-overlay">
+		<div class="container">
+			<div class="col-6 text-center mt-5">
+				<h1 class="display-4 mb-2">Hvem er jeg?</h1>
+				<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</em></blockquote>
+				<a href="#" class="btn btn-primary btn-large mb-5">Kontakt mig</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container d-xl-none">
 <div class="container border-top border-bottom border-black text-center">
 	<h1 class="display-1 mb-2">Hvem er jeg?</h1>
-	<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.."</em></blockquote>
+	<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</em></blockquote>
 	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+</div>
 </div>
 
 <div class="container mt-5">
@@ -14,8 +29,8 @@
             <h2 class="display-6 pb-2">Om mig</h2>
             <p class="fs-5 lh-base">Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. Jeg er uddannet folkeskolelærer og har arbejdet som lærer i 22 år. Jeg har derfor mange års erfaring med at arbejde med mennesker i et udviklingsmæssigt og relationelt fokus. Derudover har jeg et levet liv bag mig, med de udfordringer, glæder og bekymringer, der følger med at være menneske og ikke mindst forælder.</p>
         </div>
-        <div class="col-md-6">
-            <img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid" alt="Beskrivelse" style="max-width: 75%; height: auto;">
+        <div class="col-md-6 d-flex justify-content-end">
+            <img src="{% static 'site_layout/images/EFT-logo.png' %}" class="img-fluid" alt="Beskrivelse" style="max-width: 40%; height: 40%; margin-left: 20%;">
         </div>
     </div>
 </div>
