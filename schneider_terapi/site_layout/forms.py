@@ -25,6 +25,7 @@ class ContactForm(forms.Form):
     message = forms.CharField(
         label = "Besked",
         required = True,
+        widget=forms.Textarea,
     )
 
     def __init__(self, *args, **kwargs):
@@ -33,7 +34,7 @@ class ContactForm(forms.Form):
         self.helper.form_id = "contact_form"
         self.helper.form_class = "blueForms"
         self.helper.form_method = "post"
-        self.helper.form_action = "submit_survey"
+        self.helper.form_action = "index" # Submits to 'index' view !SET IN JS!
 
         self.helper.add_input(Submit('submit', 'Indsend'))
 
