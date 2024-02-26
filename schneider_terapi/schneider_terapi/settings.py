@@ -27,8 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = '7bec490ae32d96'
+# EMAIL_HOST_PASSWORD = 'd801e26a7e0562'
+# EMAIL_PORT = '2525'
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'send.one.com'
+EMAIL_HOST_USER = 'kontakt@schneiderterapi.dk' 
+EMAIL_HOST_PASSWORD = 'schneider23KK'
+EMAIL_PORT = '587'
+DEFAULT_FROM_EMAIL = 'kontakt@schneiderterapi.dk'
+SERVER_EMAIL = 'kontakt@schneiderterapi.dk'
 
 # Application definition
 
