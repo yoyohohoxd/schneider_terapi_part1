@@ -5,16 +5,17 @@
 
 {% block body %}
 
+
 <div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
-	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img rounded-0" alt="...">
+	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
 	<div class="card-img-overlay">
 		<div class="container">
 			<div class="col-6 text-center mt-5">
 				<h1 class="display-4 mb-2">Psykoterapi Frederiksberg</h1>
-				
-				<a href="#contact" class="btn btn-primary btn-large mb-3 mt-1">Kontakt mig</a>
+				<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
+				<a href="#" class="btn btn-primary btn-large mb-5">Kontakt mig</a>
 				<div class="d-none d-lg-block">
-					<h2 class="card-title pb-2 border-top pt-3">Emotionsfokuseret psykoterapi</h2>
+					<h2 class="card-title pb-2 border-top pt-5">Emotionsfokuseret psykoterapi</h2>
 					<p class="card-text fs-5 lh-base">Velkommen til en rejse i 
 						emotionsfokuseret psykoterapi, hvor vi bruger dine 
 						følelser som vejledning mod indre balance og ægte 
@@ -35,7 +36,7 @@
 	<div class="border-top border-bottom border-black text-center">
 		<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
 		<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
-		<a href="#contact" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+		<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
 	</div>
 
 	<!--Container med tekst til venstre og billede til højre-->   
@@ -62,8 +63,9 @@
 
 <!-- De 5 grunde -->
 <div class="container-fluid custom-dark-blue py-5 mt-0">
-	<div class="container mt-4 text-center text-white">
+	<div class="container mt-5 text-center text-white">
 		<!--<img src="{% static 'site_layout/images/blob.svg' %}" alt="blob" class="position-absolute">-->
+		<h2 class="display-6 pb-4">Her er <u>de fem grunde</u> til du skal vælge psykoterapi:</h3>
 		<h2 class="display-6 pb-4">Her er <u>de fem grunde</u> til du skal vælge psykoterapi:</h3>
 		<ul class="fs-5"> 
 			<li class="list-group-item pb-2"> · Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
@@ -100,6 +102,11 @@
 					</blockquote>
 				</div>
 			</div>
+
+			<div class="lc-block">
+				<a class="btn btn-primary" href="#" role="button">Learn More</a>
+			</div>
+
 		</div>
 		<div class="col-sm-4">
 			<div class="card border-0 shadow text-bg-light">
@@ -110,22 +117,24 @@
 						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 					</blockquote>
 				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination-RANDOMID"></div>
+
+
 			</div>
 		</div>
 	</div>
 </div>
  
  
-<div class="container-fluid custom-light-yellow text-center">
+<div class="container-fluid custom-light-red text-center">
 	<h2 class="display-6 py-5">Ring til mig på 26 36 20 00</h3>
 </div>
 
-<div class="container text-center mt-2" id="contact">
+
+<div class="container text-center mt-2">
 	<h2 class="display-6 my-4">Kontakt mig</h2>
-	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">
-		Har du brug for støtte og samtale? Udfyld formularen nedenfor, <br> 
-		og lad os sammen skabe et rum for forandring og trivsel.
-	</p>
+	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">Har du brug for støtte og samtale? Udfyld formularen nedenfor, <br> og lad os sammen skabe et rum for forandring og trivsel.</p>
     {% crispy contact_form %}
 
 </div>
