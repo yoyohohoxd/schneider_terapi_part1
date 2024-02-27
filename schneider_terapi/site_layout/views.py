@@ -10,6 +10,7 @@ from .forms import *
 TO_EMAIL = 'kontakt@schneiderterapi.dk'
 
 def index(request):
+
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
 
@@ -32,7 +33,6 @@ def index(request):
                       [TO_EMAIL],
                       html_message=html,
                       fail_silently=False)
-                
             except SMTPException as e:
                 print(f'There was an error, {e}') 
             except:

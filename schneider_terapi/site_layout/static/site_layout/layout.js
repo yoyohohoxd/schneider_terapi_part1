@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Appends alert button from the const declared above
-    const alertTrigger = document.getElementById('-');
+    const alertTrigger = document.getElementById('submit-id-submit');
     
     if (alertTrigger) {
+        
         alertTrigger.addEventListener('click', () => {
+            
             appendAlert('Jeg har modtaget din email. Jeg vender tilbage indenfor X dage.', 'success');
         });
     }
