@@ -16,17 +16,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.navbar-scrolled {
+/*.navbar-scrolled {
     background-color: rgba(255, 255, 255);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.navbar {
-    transition: all 0.5s;
-}
+}*/
 
 .navbar {
     font-family: 'Playfair Display', serif;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .custom-light-red {
@@ -43,15 +42,6 @@ input::-webkit-inner-spin-button {
 
 #id_message {
     height: 100px;
-}
-
-.scrolled-down{
-  transform:translateY(-100%); 
-  transition: all 0.3s ease-in-out;
-}
-.scrolled-up{
-  transform:translateY(0); 
-  transition: all 0.3s ease-in-out;
 }
 
 #header-background {
