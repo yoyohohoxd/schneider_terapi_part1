@@ -52,3 +52,6 @@ def eft(request):
 
 def om_mig(request):
     return render(request, "site_layout/om_mig.html")
+
+def priser_og_booking(request):
+    return render(request, "site_layout/priser_og_booking.html")

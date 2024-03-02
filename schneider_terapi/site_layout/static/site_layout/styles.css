@@ -33,13 +33,16 @@ input::-webkit-inner-spin-button {
 }
 
 .custom-light-yellow {
-    background-color: #F9DBAB;
+  background-color: #F9DBAB;
 }
 
 .custom-dark-blue {
-    background-color: #22404A;
+  background-color: #22404A;
 }
 
+.custom-dark-red {
+  background-color: #4A2C22;
+}
 #id_message {
     height: 100px;
 }
