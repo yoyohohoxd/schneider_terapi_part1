@@ -6,10 +6,21 @@
 	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
 	<div class="card-img-overlay">
 		<div class="container">
-			<div class="col-6 text-center mt-5">
-				<h1 class="display-4 mb-2">Hvem er jeg?</h1>
-				<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</em></blockquote>
-				<a href="#" class="btn btn-primary btn-large mb-5">Kontakt mig</a>
+			<div class="col-6 text-center mt-5">	
+				<div class="d-none d-lg-block">
+					<h1 class="display-5 mb-3">Om mig</h1>
+					<p class="card-text fs-5 lh-base border-bottom pb-4">Jeg hedder Kristina, og jeg er en passioneret
+					og erfaren psykoterapeut, der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.
+					Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. 
+					Jeg er uddannet folkeskolelærer og har arbejdet som lærer i 22 år. 
+					Jeg har derfor mange års erfaring med at arbejde med mennesker i et udviklingsmæssigt og 
+					relationelt fokus. Derudover har jeg et levet liv bag mig, med de udfordringer, glæder og 
+					bekymringer, der følger med at være menneske og ikke mindst forælder.
+					og erfaren psykoterapeut, der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.</p>
+                    <div class="d-grid col-3 mx-auto">
+						<a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large my-4">Kontakt mig</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -17,20 +28,11 @@
 
 <div class="container d-xl-none">
 <div class="container border-top border-bottom border-black text-center">
-	<h1 class="display-1 mb-2">Hvem er jeg?</h1>
-	<blockquote class="my-4 h2"><em>"Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer."</em></blockquote>
+	<h1 class="display-1 mb-2">Om mig</h1>
+	<blockquote class="my-4 h2"><em>Jeg hedder Kristina, og jeg er en passioneret og erfaren psykoterapeut, <br> der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.</em></blockquote>
 	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
     <img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
 </div>
-</div>
-
-<div class="container-fluid custom-dark-blue py-5 mt-0">
-	<div class="container mt-4 text-center text-white">
-		<h2 class="display-3 pb-2">
-            <h2 class="display-3 pb-3">Om mig</h2>
-            <p class="fs-5 lh-base">Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. Jeg er uddannet folkeskolelærer og har arbejdet som lærer i 22 år. Jeg har derfor mange års erfaring med at arbejde med mennesker i et udviklingsmæssigt og relationelt fokus. Derudover har jeg et levet liv bag mig, med de udfordringer, glæder og bekymringer, der følger med at være menneske og ikke mindst forælder.</p>
-        </div>
-    </div>
 </div>
 
 <div class="container mt-5">
@@ -105,7 +107,7 @@
         <div class="container mt-5 text-center text-blue">
             <h2 class="display-6 pb-4">Lær mig at kende, og jeg kan prøve hjælpe dig</h3>
             <p class="fs-5 lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
-            <a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+            <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
         </div>
     </div>
 
