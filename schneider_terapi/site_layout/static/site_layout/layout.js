@@ -5,16 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const label = document.querySelector('[for=id_message]');
     const textArea = document.querySelector('.textarea');
 
-    console.log(navEl.offsetHeight);
-
     // Removes 'Besked' floating field when there is enough text
     // in the textArea that the window needs a scrollbar
-    textArea.addEventListener('scroll', () => {
-        if (textArea.clientHeight < textArea.scrollHeight) {
-            label.style.display = 'none';
-        } 
-    });
-
+    if (textArea) {
+        textArea.addEventListener('scroll', () => {
+            if (textArea.clientHeight < textArea.scrollHeight) {
+                label.style.display = 'none';
+            } 
+        });
+    }
 
     // Alerts for page --> gets sepcific alert placeholders from template
     const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
