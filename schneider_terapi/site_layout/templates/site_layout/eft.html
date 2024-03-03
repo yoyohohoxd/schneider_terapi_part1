@@ -2,52 +2,34 @@
 {% load static %}
 
 {% block body %}
-
-<div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
-    <img src="{% static 'site_layout/images/test.jpg' %}" class="card-img" alt="...">
-    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-        <div class="text-center" style="color: #000;">
-            <h1 class="display-4 mb-5">Emotionsfokuseret psykoterapi EFT</h1>
-            <a href="#" class="btn btn-primary btn-large mb-5">Kontakt mig</a>
-        </div>
+<div class="container-fluid py-5 custom-grey">
+    <div class="container text-center text-white">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
+                <div class="d-grid col-3 mx-auto pb-4">
+                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
+                </div>
+                <p class="fs-5 lh-base border-top pt-4">Emotionsfokuseret psykoterapi (EFT) 
+                    er en terapeutisk tilgang, der fokuserer på at udforske og 
+                    forstå følelser. Denne form for terapi hjælper individer med 
+                    at skabe bevidsthed om de underliggende behov og ønsker, der 
+                    driver deres følelsesmæssige reaktioner. Denne indsigt fører 
+                    til en dybere forståelse af både ens selvopfattelse og ens 
+                    relationer til andre. Ved at lære at udtrykke og bearbejde 
+                    følelser på en sund og konstruktiv måde, kan EFT bidrage til 
+                    at skabe mere tilfredsstillende og autentiske mellemmenneskelige 
+                    forhold.</p>
+            </div>
+        </div>  
     </div>
-</div>
-
-<div class="container d-xl-none">
-<div class="container border-top border-bottom border-black text-center">
-	<h1 class="display-1 mb-2">Emotionsfokuseret psykoterapi EFT</h1>
-	<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
-</div>
-</div>
-
-
-<div class="container-fluid custom-dark-blue py-5 mt-0">
-	<div class="container mt-5 text-center text-white">
-		<h2 class="display-6 pb-4">Terapiområder, som jeg kan hjælpe med</h3>
-		<ul class="fs-5"> 
-			<li class="list-group-item pb-2"> · Forbedring af emotionel bevidsthed.</li>
-			<li class="list-group-item pb-2"> · Udvikling af sunde håndteringsstrategier for følelser.</li>
-			<li class="list-group-item pb-2"> · Styrkelse af relationer gennem emotionel forbindelse.</li>
-			<li class="list-group-item pb-2"> · Opløsning af gamle, smertefulde følelsesmønstre.</li>
-			<li class="list-group-item pb-2"> · Fremme af personlig vækst og udvikling.</li>
-		</ul>
-	</div>
-</div>
-
-<div class="container mt-5 text-blue">
-    <h2 class="display-6 pb-4">Introduktion til Emotionsfokuseret Psykoterapi (EFT)</h2>
-    <p class="fs-5 lh-base">Emotionsfokuseret psykoterapi (EFT) er en terapeutisk tilgang, der fokuserer på at udforske og forstå følelser. Denne form for terapi hjælper individer med at skabe bevidsthed om de underliggende behov og ønsker, der driver deres følelsesmæssige reaktioner. Denne indsigt fører til en dybere forståelse af både ens selvopfattelse og ens relationer til andre. Ved at lære at udtrykke og bearbejde følelser på en sund og konstruktiv måde, kan EFT bidrage til at skabe mere tilfredsstillende og autentiske mellemmenneskelige forhold. <span class="fst-italic"> For at læse mere omkring mig, og hvor jeg har fået min uddannelse i Emotionsfokuseret Psykoterapi (EFT) kan du trykke på knappen nedenunder.</span></p>
-    <div class="d-grid col-2 mx-auto">
-        <a href="{% url 'om_mig' %}" class="btn btn-primary btn-large mb-3">Uddannelse</a>
-    </div>
-
 </div>
 
 <div class="container my-5 text-blue">
     <div class="row">
         <div class="col-md-5">
             <div class="mb-5">
-                <h2 class="display-6 pb-3">Følelsesmæssig Balance Gennem EFT</h2>
+                <h2 class="pb-3">Følelsesmæssig Balance Gennem EFT</h2>
                 <p class="fs-5 lh-base">Et centralt aspekt af EFT er at opnå følelsesmæssig balance. Terapien involverer at undersøge følelser, herunder dem, der måske fylder for meget eller for lidt i ens liv. Dette arbejde er vigtigt for at finde en indre balance, der hjælper en person til at reagere mere passende og autentisk ud fra egne værdier og behov. EFT anerkender vigtigheden af at forstå og håndtere følelser for at opnå mental og følelsesmæssig velvære.</p>
             </div>
         </div>
@@ -58,8 +40,27 @@
     </div>  
 </div>
 
+<div class="container-fluid custom-dark-blue py-5 mt-0">
+	<div class="container mt-5 text-center text-white">
+		<h2 class="pb-4">Terapiområder, som jeg kan hjælpe med</h3>
+		<ul class="fs-5"> 
+			<li class="list-group-item pb-2"> · Forbedring af emotionel bevidsthed.</li>
+			<li class="list-group-item pb-2"> · Udvikling af sunde håndteringsstrategier for følelser.</li>
+			<li class="list-group-item pb-2"> · Styrkelse af relationer gennem emotionel forbindelse.</li>
+			<li class="list-group-item pb-2"> · Opløsning af gamle, smertefulde følelsesmønstre.</li>
+			<li class="list-group-item pb-2"> · Fremme af personlig vækst og udvikling.</li>
+		</ul>
+        <span class="fst-italic mb-2"> For at læse mere omkring 
+            mig, og hvor jeg har fået min uddannelse i Emotionsfokuseret
+             Psykoterapi (EFT) kan du trykke på knappen nedenunder.</span>
+        <div class="d-grid col-3 mx-auto">
+            <a href="{% url 'om_mig' %}" class="btn btn-primary btn-large mt-4 mb-2">Uddannelse</a>
+        </div>
+	</div>
+</div>
+
 <div class="container my-5 text-blue">
-    <h2 class="display-6 pb-4">Fokus på Følelser i EFT</h3>
+    <h2 class="pb-4">Fokus på Følelser i EFT</h3>
     <p class="fs-5 lh-base"> I EFT er der et særligt fokus på følelseslivet, idet følelserne betragtes som en væsentlig del af vores navigationssystem i livet. Mange mennesker har lært enten at undertrykke deres følelser eller helt at ignorere dem. Problemet med denne tilgang bliver ofte først tydeligt, når man finder sig selv på afveje, væk fra ens autentiske selv og ens relationer til andre. Ignorering eller undertrykkelse af følelser kan have alvorlige konsekvenser for ens mentale helbred, hvilket kan manifestere sig i form af depression, lavt selvværd, ensomhed, angst, stress, selvskade og konflikter i relationer.</p>
 </div>
 
@@ -104,32 +105,39 @@
 
 <div class="container my-5">
     <div class="row mt-5 text-black justify-content-center">
-            <div class="col-md-6">
-                <h2 class="display-6 pb-5">Genoprettelse af Følelsesmæssig Forbindelse via EFT</h2> 
-                <p class="fs-5 lh-base pb-5">En vigtig del af EFT er også arbejdet med at genetablere og styrke den følelsesmæssige forbindelse til sig selv og andre. I en verden, hvor mange oplever pres og stress, kan det være udfordrende at bevare en autentisk selvkontakt og nærhed i relationer. EFT tilbyder værktøjer og teknikker til ikke kun at genkende og forstå følelser, men også til at reagere på dem på en måde, der fremmer personlig vækst og forbedrer relationer. </p>
-            </div>
-    
-            <div class="col-md-6">
-                <img src="{% static 'site_layout/images/lille_gennemsigtig.png' %}" alt="Kristina" class="img-fluid mx-auto d-block" style="max-width: 450px; width: 100%;">
-            </div>
+        <div class="col-md-6">
+            <h2 class="pb-5">Genoprettelse af Følelsesmæssig Forbindelse via EFT</h2> 
+            <p class="fs-5 lh-base pb-5">En vigtig del af EFT er også arbejdet med at genetablere og styrke den følelsesmæssige forbindelse til sig selv og andre. I en verden, hvor mange oplever pres og stress, kan det være udfordrende at bevare en autentisk selvkontakt og nærhed i relationer. EFT tilbyder værktøjer og teknikker til ikke kun at genkende og forstå følelser, men også til at reagere på dem på en måde, der fremmer personlig vækst og forbedrer relationer. </p>
         </div>
-    </div>
-    
-    <div class="container mt-5 text-blue">
-        <h2 class="display-6 pb-4">EFT's Rolle i Personlig Vækst og Selvindsigt</h3>
-        <p class="fs-5 lh-base"> En fundamental del af EFT er dens rolle i at fremme personlig vækst og dybere selvindsigt. Denne terapiform hjælper individer med at anerkende og forstå deres følelsesmæssige sårbarheder og styrker. Ved at arbejde igennem og forstå disse emotionelle aspekter, opnår man ikke kun en større selvbevidsthed men også en forbedret evne til at håndtere livets udfordringer. EFT faciliterer en rejse mod selvopdagelse, hvor klienter lærer at anerkende og respektere deres følelser som gyldige og informative aspekter af deres oplevelser. Denne rejse kan ofte være transformerende, idet den tillader en person at bryde med negative mønstre og skabe et mere autentisk og opfyldende liv.</p>
-    </div>
-    
-    <div class="container mt-5 text-blue">
-        <h2 class="display-6 pb-4">Emotionskompasset</h2>
-        <p class="fs-5 lh-base"> Er du nysgerrig efter at udforske Emotionskompasset yderligere og ønsker at forstå, hvordan det kan hjælpe dig med at navigere i dine følelser? For at dykke dybere ind i konceptet og opdage de mange måder, hvorpå Emotionskompasset kan berige dit liv, opfordrer jeg dig til at <a href="https://emotionskompasset.dk/" target="_blank">følge dette link</a>. Her finder du en skattekiste af information, der venter på at blive udforsket. Lad din rejse mod følelsesmæssig indsigt begynde i dag.</p>
-    </div>
 
-    <div class="container-fluid custom-light-red py-5 mt-5">
-        <div class="container mt-5 text-center text-blue">
-            <h2 class="display-6 pb-4">Måske kan du genkende dig selv i det her eller noget der ligner</h3>
-            <p class="fs-5 lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
-            <a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+        <div class="col-md-6">
+            <img src="{% static 'site_layout/images/lille_gennemsigtig.png' %}" alt="Kristina" class="img-fluid mx-auto d-block" style="max-width: 450px; width: 100%;">
         </div>
     </div>
+</div>
+
+<div class="container-fluid custom-light-red py-5 mt-5">
+    <div class="container mt-5 text-center text-blue">
+        <h2 class="pb-4">Måske kan du genkende dig selv i det her eller noget der ligner</h3>
+        <p class="fs-5 lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
+        <a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2 class="pb-4">EFT's Rolle i Personlig Vækst og Selvindsigt</h3>
+            <p class="fs-5 lh-base"> En fundamental del af EFT er dens rolle i at fremme personlig vækst og dybere selvindsigt. Denne terapiform hjælper individer med at anerkende og forstå deres følelsesmæssige sårbarheder og styrker. Ved at arbejde igennem og forstå disse emotionelle aspekter, opnår man ikke kun en større selvbevidsthed men også en forbedret evne til at håndtere livets udfordringer. EFT faciliterer en rejse mod selvopdagelse, hvor klienter lærer at anerkende og respektere deres følelser som gyldige og informative aspekter af deres oplevelser. Denne rejse kan ofte være transformerende, idet den tillader en person at bryde med negative mønstre og skabe et mere autentisk og opfyldende liv.</p>
+        </div>
+        
+        <div class="col">
+            <h2 class="pb-4">Emotionskompasset</h2>
+            <p class="fs-5 lh-base"> Er du nysgerrig efter at udforske Emotionskompasset yderligere og ønsker at forstå, hvordan det kan hjælpe dig med at navigere i dine følelser? For at dykke dybere ind i konceptet og opdage de mange måder, hvorpå Emotionskompasset kan berige dit liv, opfordrer jeg dig til at <a href="https://emotionskompasset.dk/" target="_blank">følge dette link</a>. Her finder du en skattekiste af information, der venter på at blive udforsket. Lad din rejse mod følelsesmæssig indsigt begynde i dag.</p>
+        </div>
+    </div>
+</div>
+
+
+
     {% endblock %}

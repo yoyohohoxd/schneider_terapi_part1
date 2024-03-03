@@ -2,19 +2,20 @@
 {% load static %}
 
 {% block body %}
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="text">
-                <h1 class="display-1 mb-2">Terapi</h1>
-                <blockquote class="my-4 h2"><em>"For både Unge (18-25) og voksne."</em></blockquote>
-                <a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
-            </div> 
-        </div>
-        <div class="col-md-5">
-            <img src="{% static 'site_layout/images/Terapi Billede.jpeg' %}" class="img-fluid custom-image" alt="Beskrivende tekst" style="width: 100%; margin-left: -20px;"></div>
-        </div>
-    </div>  
+<div class="container-fluid custom-grey">
+    <div class="container text-center text-white">
+        <div class="row align-items-center">
+            <div class="col-md-6 border-bottom ">
+                <h2 class="display-6 pb-2">Terapi for både unge og voksne</h2>
+                <div class="d-grid col-3 mx-auto pb-3">
+                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'site_layout/images/Terapi Billede.jpeg' %}" alt="Terapibillede" class="img-fluid">
+            </div>
+        </div>  
+    </div>
 </div>
 
 <div class="container my-5">
