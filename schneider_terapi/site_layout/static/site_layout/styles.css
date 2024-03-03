@@ -43,6 +43,11 @@ input::-webkit-inner-spin-button {
 .custom-red {
   background-color: #8a4c55;
 }
+
+.custom-grey {
+  background-color: #878984;
+} 
+
 #id_message {
     height: 100px;
 }
@@ -50,10 +55,3 @@ input::-webkit-inner-spin-button {
 #header-background {
   background-image: url("images/udvidet_kristina2.jpg");
 }
-
-
-
-  
-
-
-

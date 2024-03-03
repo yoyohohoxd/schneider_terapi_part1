@@ -4,43 +4,15 @@
 {% block body %}
 
 
-<div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
-	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
-	<div class="card-img-overlay">
-		<div class="container">
-			<div class="col-6 text-center mt-5">	
-				<div class="d-none d-lg-block">
-					<h2 class="card-title pb-2 pt-4">Priser og booking</h2>
-					<p class="card-text fs-5 lh-base border-bottom pb-4">Velkommen til min praksis! 
-                        Vi tilbyder tre forskellige terapipakker for at imødekomme dine behov: 
-                        Enkelt session for dem, der har brug for en engangs konsultation; 
-                        klippekort med 5 sessioner for kontinuerlig støtte og dybere udforskning; 
-                        samt en speciel pakke for studerende og ældre med reduceret pris. 
-                        Uanset hvilken pakke du vælger, arbejder vi sammen for at skabe et 
-                        trygt rum til personlig udvikling og positive forandringer. 
-                        Kontakt os for at finde den rette løsning for dig!</p>
-                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-3">Kontakt mig</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container d-xl-none">
-	<!-- Hero - overskift sektionen --> 
-	<div class="border-top border-bottom border-black text-center">
-		<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
-		<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
-		<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
-	</div>
-
-	<!--Container med tekst til venstre og billede til højre-->   
-	<div class="mt-5 position-relative">
-		<div class="row">
-			<div class="col-lg-6 text-section">
-				<h2 class="display-6 pb-2">Priser og booking</h2>
-				<p class="fs-5 lh-base">Velkommen til min praksis! 
+<div class="container-fluid custom-grey pt-5">
+    <div class="container text-center text-white">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="display-6 pb-2">Priser og booking</h2>
+                <div class="d-grid col-3 mx-auto pb-3">
+                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
+                </div>
+                <p class="card-text fs-5 lh-base border-top py-3">Velkommen til min praksis! 
                     Vi tilbyder tre forskellige terapipakker for at imødekomme dine behov: 
                     Enkelt session for dem, der har brug for en engangs konsultation; 
                     klippekort med 5 sessioner for kontinuerlig støtte og dybere udforskning; 
@@ -48,64 +20,85 @@
                     Uanset hvilken pakke du vælger, arbejder vi sammen for at skabe et 
                     trygt rum til personlig udvikling og positive forandringer. 
                     Kontakt os for at finde den rette løsning for dig!</p>
-			</div>
-			<div class="col-lg-6 image-section">
-				<img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid image" alt="Beskrivelse"> 
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'site_layout/images/lille_gennemsigtig.png' %}" alt="Kristina" class="img-fluid mx-auto d-block" style="max-width: 450px; width: 100%;">
+            </div>
+        </div>  
+    </div>
 </div>
 
-<div class="container my-4">
+<div class="container-fluid bg">
+    <div class="container my-5">
+        <h1 class="text-center my-4">Priser og praktisk</h1>
+        <div class="row text-center">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Individuel terapi <br> á 60 minutter</h5>
+                        <h4 class="card-subtitle mb-2 text-body-secondary">800,- Kr</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Individuel terapi á 60 minutter klippekort 5 gange</h5>
+                        <h4 class="card-subtitle mb-2 text-body-secondary">3.750,- Kr</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Individuel terapi á 60 minutter klippekort 5 gange</h5>
+                        <h4 class="card-subtitle mb-2 text-body-secondary">3.750,- Kr</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="row my-4">
+            <p class="col-md-12">
+                Kontakt mig på kontakt@schneiderterapi.dk eller send 
+                en sms til 26362000 hvis du har spørgsmål inden booking. 
+                Vi aftaler hvilken adresse der passer dig bedst. 
+                Afbud skal meddeles senest dagen før. Ved afbud samme 
+                dag vil du blive opkrævet halvdelen af sessionens pris. 
+                Ved manglende afbud eller fremmøde vil hele sessionens pris blive opkrævet.
+            </p>
+        </div>-->
+    </div>
+</div>
+
+<div class="container my-5">
     <div class="row">
         <div class="col-md-6">
             <h1 class="">Adresser</h1>
-            <p class="fs-5 lh-base">Jeg har klinik på to adresser:</p>
+            <p class="lh-base">Jeg har klinik på to adresser:</p>
             <ul>
-                <li class="list-item fs-5 lh-base">Hearthouse Amagertorv 14B, 3.sal, 1160 kbh K.</li>
-                <li class="list-item fs-5 lh-base">Thorvaldsensvej 12, 1871 Frederiksberg C.</li>
-            </ul>  
+                <li class="list-item fw-bold lh-base"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="https://www.google.com/maps/place/Heart+House/@55.6791561,12.5736598,15.5z/data=!4m6!3m5!1s0x46525310d1418b1d:0x4571b947804baba5!8m2!3d55.6789043!4d12.5783224!16s%2Fg%2F11c1nbxd45?entry=ttu">Hearthouse Amagertorv 14B, 3.sal, 1160 kbh K.</a></li>
+                <li class="list-item fw-bold lh-base"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="https://www.google.com/maps/place/sttv,+Thorvaldsensvej+12,+1871+Frederiksberg/@55.6817821,12.5471396,15.25z/data=!4m6!3m5!1s0x465253a69bcc58c9:0x624aa93c0d4f31a8!8m2!3d55.6806874!4d12.5469587!16s%2Fg%2F11csm_wc6v?entry=ttu">Thorvaldsensvej 12, 1871 Frederiksberg C.</a></li>
+            </ul>
+            <div class="fs-6 lh-base">
+                Kontakt mig på <a href="mailto:kontakt@schneiderterapi.dk">kontakt@schneiderterapi.dk</a> eller send en sms 
+                til 26362000 hvis du har spørgsmål inden booking.   
+                Vi aftaler hvilken adresse der passer dig bedst. 
+                Afbud skal meddeles senest dagen før. Ved afbud samme dag vil du blive opkrævet halvdelen af sessionens pris. 
+                Ved manglende afbud eller fremmøde vil hele sessionens pris blive opkrævet.
+            </div>
         </div>
         <div class="col-md-6">
-            <iframe class="d-block mx-auto" width="500" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=275&amp;height=400&amp;hl=en&amp;q=Thorvaldsensvej%2012,%201871%20Frederiksberg%20C.%20Frederiksberg+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://embedmaps.net'>embed google map on website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=10cfc23c6ee5bd1ce9a2e531d0f4c6e77535fcfe'></script>
+            <iframe class="d-block mx-auto" width="350" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=275&amp;height=400&amp;hl=en&amp;q=Thorvaldsensvej%2012,%201871%20Frederiksberg%20C.%20Frederiksberg+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://embedmaps.net'>embed google map on website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=10cfc23c6ee5bd1ce9a2e531d0f4c6e77535fcfe'></script>
         </div>
     </div>
 </div>
-<div class="container my-4">
-    <h1 class="text-center my-4">Priser og praktisk</h1>
-    <div class="row text-center">
-        <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Individuel terapi <br> á 60 minutter</h5>
-                    <h4 class="card-subtitle mb-2 text-body-secondary">800,- Kr</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Individuel terapi á 60 minutter klippekort 5 gange</h5>
-                    <h4 class="card-subtitle mb-2 text-body-secondary">3.750,- Kr</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
-                </div>
-            </div>
-        </div>  
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Individuel terapi á 60 minutter klippekort 5 gange</h5>
-                    <h4 class="card-subtitle mb-2 text-body-secondary">3.750,- Kr</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary">Kontakt mig</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 {% endblock %}
