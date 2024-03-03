@@ -55,3 +55,6 @@ def om_mig(request):
 
 def priser_og_booking(request):
     return render(request, "site_layout/priser_og_booking.html")
+
+def terapi(request):
+    return render(request, "site_layout/terapi.html")
