@@ -5,19 +5,16 @@
 
 {% block body %}
 
-
-<div class="card border-0 rounded-0 text-bg-dark d-none d-xl-block">
-	<img src="{% static 'site_layout/images/udvidet_kristina2.jpg' %}" class="card-img" alt="...">
-	<div class="card-img-overlay">
-		<div class="container">
-			<div class="col-6 text-center mt-5">
-				<h1 class="display-4 mb-2">Schneider Terapi</h1>
-				<div class="d-grid col-3 mx-auto">
-					<a href="#contact_form" class="btn btn-primary btn-large my-4">Kontakt mig</a>
-				</div>
-				<div class="d-none d-lg-block">
-					<h2 class="card-title pb-2 border-top pt-4">Emotionsfokuseret psykoterapi</h2>
-					<p class="card-text fs-5 lh-base">Velkommen til en rejse i 
+<div class="container-fluid sky-blue pt-5">
+    <div class="container text-center ">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="display-6 text-uppercase pb-3">Schneider Terapi</h2>
+                <div class="d-grid col-3 mx-auto pb-3">
+                    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large my-3">Kontakt mig</a>
+                </div>
+                <p class="card-text fw-light fs-5 lh-base border-black border-top py-3">
+                    Velkommen til en rejse i 
 						emotionsfokuseret psykoterapi, hvor vi bruger dine 
 						følelser som vejledning mod indre balance og ægte 
 						selvudtryk. Vi udforsker og balancerer dine følelser 
@@ -25,49 +22,21 @@
 						navigere i livets udfordringer. Uanset din situation, 
 						er du i trygge hænder, hvor vi sammen søger dybere 
 						forståelse og personlig udvikling.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container d-xl-none">
-	<!-- Hero - overskift sektionen --> 
-	<div class="border-top border-bottom border-black text-center">
-		<h1 class="display-1 mb-2">Psykoterapi Frederiksberg</h1>
-		<blockquote class="my-4 h2"><em>"For at ændre følelser <br> må du arbejde med følelser."</em></blockquote>
-		<a href="#" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
-	</div>
-
-	<!--Container med tekst til venstre og billede til højre-->   
-	<div class="mt-5 position-relative">
-		<div class="row">
-			<div class="col-lg-6 text-section">
-				<h2 class="display-6 pb-2">Emotionsfokuseret psykoterapi</h2>
-				<p class="fs-5 lh-base">Velkommen til en rejse i 
-					emotionsfokuseret psykoterapi, hvor vi bruger dine 
-					følelser som vejledning mod indre balance og ægte 
-					selvudtryk. Vi udforsker og balancerer dine følelser 
-					for at styrke din evne til at træffe sunde valg og 
-					navigere i livets udfordringer. Uanset din situation, 
-					er du i trygge hænder, hvor vi sammen søger dybere 
-					forståelse og personlig udvikling.</p>
-			</div>
-			<div class="col-lg-6 image-section">
-				<img src="{% static 'site_layout/images/foto.jpg' %}" class="img-fluid image" alt="Beskrivelse"> 
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'site_layout/images/lille_gennemsigtig.png' %}" alt="Kristina" class="img-fluid mx-auto d-block" style="max-width: 600px; width: 100%;">
+            </div>
+        </div>  
+    </div>
 </div>
 
 
 <!-- De 5 grunde -->
-<div class="container-fluid custom-dark-blue py-5 mt-0">
-	<div class="container mt-5 text-center text-white">
+<div class="container-fluid white-chocolate py-5">
+	<div class="container mt-5 text-center">
 		<!--<img src="{% static 'site_layout/images/blob.svg' %}" alt="blob" class="position-absolute">-->
-		<h2 class="display-6 pb-4">Her er <u>de fem grunde</u> til du skal vælge psykoterapi:</h3>
-		<ul class="fs-5"> 
+		<h2 class="display-6 pb-4">Her er <i>de fem grunde</i> til, at du skal vælge psykoterapi:</h3>
+		<ul class="fs-5 fw-light"> 
 			<li class="list-group-item pb-2"> · Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
 			<li class="list-group-item pb-2"> · Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
 			<li class="list-group-item pb-2"> · Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
@@ -82,7 +51,7 @@
     <div class="row gx-5">
         <div class="col-md-6">
 			<h2 class="pb-1">At starte i terapi</h2>
-            <p class="fs-5 lh-base">​Psykoterapi er en investering i dig selv.
+            <p class="fs-5 fw-light lh-base">​Psykoterapi er en investering i dig selv.
 				 Hvis investeringen skal give afkast, er det vigtigt, at du gør 
 				 dig klart, at det kræver noget af dig at gå i terapi. Du skal være 
 				 villig til at indgå i et samarbejde med terapeuten, at være undersøgende, 
@@ -101,14 +70,14 @@
         </div>
         <div class="col-md-6">
 			<h2 class="pb-1">Etik og kvalitetssikring</h2>
-			<p class="fs-5 lh-base">Alle henvendelser behandles fortroligt 
+			<p class="fs-5 fw-light lh-base">Alle henvendelser behandles fortroligt 
 				og jeg er naturligvis underlagt tavshedspligt. Alle 
 				personoplysninger opbevares sikkert og destrueres efter 
 				endt forløb ift. reglerne om opbevaring af personoplysninger. 
 				Jeg er underlagt og lever op til databeskyttelsesforordningens 
 				regler <a href="https://www.datatilsynet.dk/hvad-siger-reglerne">https://www.datatilsynet.dk/hvad-siger-reglerne</a> om beskyttelse 
 				af personoplysninger.</p>
-			<p class="fs-5 lh-base">
+			<p class="fs-5 fw-light lh-base">
 				Jeg arbejder ud fra <a href="https://psykoterapeutforeningen.dk/radgivning-og-karriere/fag-og-etik/etikregler">Dansk Psykoterapeutforenings 
 					etiske regelsæt</a> og modtager løbende supervision samt egenterapi.				
 			</p>
@@ -116,69 +85,67 @@
     </div>  
 </div>
 
-<div class="container my-5">
-	<div class="col">
-		<h2 class="pb-1">Uddannelse</h2>
-		<p class="fs-5 lh-base">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse:</p>
-		<ul>
-			<li class="list-item fs-5 lh-base">Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
-			<li class="list-item fs-5 lh-base">Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
-			<li class="list-item fs-5 lh-base">Eksistentiel terapi v. Vibeke Dyhrcrone</li>
-			<li class="list-item fs-5 lh-base">Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
-			<li class="list-item fs-5 lh-base">Den motiverende samtale - Psykiatrifonden</li>
-		</ul>
+<div class="container-fluid midnight">
+	<div class="container py-5 text-white">
+		<div class="col">
+			<h2 class="pb-1">Uddannelse</h2>
+			<p class="fs-5 fw-light lh-base">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse:</p>
+			<ul class="fw-light">
+				<li class="list-item fs-5 lh-base">Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
+				<li class="list-item fs-5 lh-base">Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
+				<li class="list-item fs-5 lh-base">Eksistentiel terapi v. Vibeke Dyhrcrone</li>
+				<li class="list-item fs-5 lh-base">Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
+				<li class="list-item fs-5 lh-base">Den motiverende samtale - Psykiatrifonden</li>
+			</ul>
+		</div>
 	</div>
 </div>
 
     
 <!-- Testimonials -->
-<div class="container my-5">
-	<div class="row">
-		<div class="col-sm-4 mb-3 mb-sm-0">
-			<div class="card border-0 shadow text-bg-light">
-				<div class="card-body">
-					<h1 class="display-1">"</h1>
-					<blockquote class="blockquote mb-0">
-						<p>A well-known quote, contained in a blockquote element.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-					</blockquote>
+<div class="container-fluid">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card border-0 shadow text-bg-light">
+					<div class="card-body">
+						<h1 class="display-1">"</h1>
+						<blockquote class="blockquote mb-0">
+							<p>A well-known quote, contained in a blockquote element.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="card border-0 shadow text-bg-light">
-				<div class="card-body">
-					<h1 class="display-1">"</h1>
-					<blockquote class="blockquote mb-0">
-						<p>A well-known quote, contained in a blockquote element.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-					</blockquote>
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card border-0 shadow text-bg-light">
+					<div class="card-body">
+						<h1 class="display-1">"</h1>
+						<blockquote class="blockquote mb-0">
+							<p>A well-known quote, contained in a blockquote element.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="card border-0 shadow text-bg-light">
-				<div class="card-body">
-					<h1 class="display-1">"</h1>
-					<blockquote class="blockquote mb-0">
-						<p>A well-known quote, contained in a blockquote element.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-					</blockquote>
+			<div class="col-sm-4 mb-3 mb-sm-0">
+				<div class="card border-0 shadow text-bg-light">
+					<div class="card-body">
+						<h1 class="display-1">"</h1>
+						<blockquote class="blockquote mb-0">
+							<p>A well-known quote, contained in a blockquote element.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
- 
- 
-<div class="container-fluid text-center custom-red text-white">
-	<h2 class="py-5">Ring til mig på 26 36 20 00</h3>
-</div>
-
+</div> 
 
 <div class="container text-center mt-2" id="contact_form">
-	<h2 class="my-4">Kontakt mig</h2>
-	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">Har du brug for støtte og samtale? Udfyld formularen nedenfor, <br> og lad os sammen skabe et rum for forandring og trivsel.</p>
+	<h2 class="my-4">Kontakt mig på 26 36 20 00</h2>
+	<p class="fs-5 pb-2 mb-4 lh-base border-bottom">Har du brug for støtte og samtale? Kan du også udfylde formularen nedenfor, <br> og lad os sammen skabe et rum for forandring og trivsel.</p>
     {% crispy contact_form %}
 
 </div>

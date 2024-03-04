@@ -32,16 +32,19 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item px-2">
-                            <a class="nav-link" aria-current="page" href="{% url 'om_mig' %}">Om Kristina</a>
+                            <a class="nav-link" aria-current="page" href="{% url 'om_mig' %}">Om mig</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="{% url 'eft' %}">Emotionsfokuseret psykoterapi EFT</a>
+                            <a class="nav-link" href="{% url 'eft' %}">Emotionsfokuseret psykoterapi</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link" href="{% url 'terapi' %}">Terapi</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link" href="{% url 'priser_og_booking' %}">Priser og booking</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large rounded-pill">Kontakt mig</a>
                         </li>
                     </ul>
                 </div>
@@ -56,9 +59,9 @@
     
 
     <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid mt-5 custom-red">
+<div class="container-fluid pt-5 white-chocolate">
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white">
+    <footer class="text-center text-lg-start">
       <!-- Grid container -->
       <div class="container pb-0">
         <!-- Section: Links -->
@@ -78,35 +81,37 @@
             <hr class="w-100 clearfix d-md-none" />
   
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Useful links
-              </h6>
-              <p>
-                <a class="text-white">Your Account</a>
-              </p>
-              <p>
-                <a class="text-white">Become an Affiliate</a>
-              </p>
-              <p>
-                <a class="text-white">Shipping Rates</a>
-              </p>
-              <p>
-                <a class="text-white">Help</a>
-              </p>
-            </div>
-  
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Kontakt mig</h5>
+                <p>Hearthouse Amagertorv 14B, 3.sal, 1160 kbh K.</p>
+                <p>Thorvaldsensvej 12, 1871 Frederiksberg C.</p>
+                <p>kontakt@schneiderterapi.dk</p>
+                <p>+ 45 23 45 67 88</p>
+                <p>CVR-nr.: </p>
+              </div>
             <!-- Grid column -->
             <hr class="w-100 clearfix d-md-none" />
   
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-            </div>
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Links</h5>
+                <p>
+                  <a href="{% url 'index' %}" class="text-decoration-none">Forside</a>
+                </p>
+                <p>
+                  <a href="{% url 'om_mig' %}" class="">Om mig</a>
+                </p>
+                <p>
+                  <a href="{% url 'eft' %}" class="">Emotionsfokuseret Terapi</a>
+                </p>
+                <p>
+                  <a href="{% url 'terapi' %}" class="">Terapi</a>
+                </p>
+                <p>
+                  <a href="{% url 'priser_og_booking' %}" class="">Priser og booking</a>
+                </p>
+              </div>
             <!-- Grid column -->
           </div>
           <!--Grid row-->

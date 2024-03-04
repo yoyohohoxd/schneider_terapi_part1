@@ -1,9 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 html * {
-    font-family: 'Playfair Display', serif !important;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #F6F6F4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif !important;
+}
+
+p, div, li {
+  font-family: 'Josefin Sans', sans-serif !important;
 }
 
 .asteriskField {
@@ -28,25 +41,25 @@ input::-webkit-inner-spin-button {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.custom-light-red {
-  background-color: #E0B4A4;
+.blush {
+  background-color: #e3d1bf;
 }
 
-.custom-light-yellow {
-  background-color: #F9DBAB;
+.white-chocolate {
+  background-color: #EBE5DC;
 }
 
-.custom-dark-blue {
-  background-color: #22404A;
+.sky-blue {
+  background-color: #D6E0E2;
 }
 
-.custom-red {
-  background-color: #8a4c55;
+.forest-green {
+  background-color: #5E6C5B;
 }
 
-.custom-grey {
-  background-color: #878984;
-} 
+.midnight {
+  background-color: #162a2cde;
+}
 
 #id_message {
     height: 100px;

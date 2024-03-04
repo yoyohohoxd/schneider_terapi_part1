@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block body %}
-<div class="container-fluid custom-grey pt-5">
-    <div class="container text-center text-white">
+<div class="container-fluid sky-blue pt-5">
+    <div class="container text-center">
         <div class="row">
             <div class="col-md-6">
-                <h2 class="display-6 pb-2">Om mig</h2>
+                <h2 class="display-6 text-uppercase pb-2">Om mig</h2>
                 <div class="d-grid col-3 mx-auto pb-3">
                     <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
                 </div>
-                <p class="card-text fs-5 lh-base border-top py-3">
+                <p class="card-text fw-light fs-5 lh-base border-black border-top py-3">
                     Jeg hedder Kristina, og jeg er en passioneret
 					og erfaren psykoterapeut, der brænder for at hjælpe mennesker med at håndtere deres følelser og udfordringer.
 					Jeg er 48 år, mor til to store piger, gift med Kim og bor til daglig på Frederiksberg. 
@@ -27,32 +27,34 @@
     </div>
 </div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="mb-5">
-                <h2 class="display-6 pb-2">Uddannelse</h2>
-                <p class="fs-5 lh-base">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse:</p>
-                <ul>
-                    <li class="list-item fs-5 lh-base">Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
-                    <li class="list-item fs-5 lh-base">Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
-                    <li class="list-item fs-5 lh-base">Eksistentiel terapi v. Vibeke Dyhrcrone</li>
-                    <li class="list-item fs-5 lh-base">Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
-                    <li class="list-item fs-5 lh-base">Den motiverende samtale - Psykiatrifonden</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <img src="{% static 'site_layout/images/EFT-logo.png' %}" class="img-fluid custom-image" alt="Beskrivende tekst" style="height: 400px;">
-        </div>
-    </div>  
+<div class="container-fluid white-chocolate">
+	<div class="container pt-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="mb-5">
+					<h2 class=" pb-2">Uddannelse</h2>
+					<p class="fs-5 fw-light lh-base">Jeg er uddannet Emotionsfokuseret Psykoterapeut fra EFT-Instituttet i København. Jeg afsluttede min uddannelse i 2022 og har det sidste år bl.a. arbejdet som frivillig rådgiver hos Psykiatrifonden og som terapeut hos Alfarehab, hvor jeg arbejder med voksne pårørende til misbrugere. Kurser i forbindelse med min uddannelse/videreuddannelse:</p>
+					<ul class="fw-light">
+						<li class="list-item fs-5 lh-base">Neuroaffektiv udvikling og tilknytning v. Susan Hart </li>
+						<li class="list-item fs-5 lh-base">Spiseforstyrrelser og misbrugsproblematikker v. Susie Kruse </li>
+						<li class="list-item fs-5 lh-base">Eksistentiel terapi v. Vibeke Dyhrcrone</li>
+						<li class="list-item fs-5 lh-base">Psykiatriske diagnoser v. specialpsykolog Camilla Skovgaard Poulsen/psykiatrifonden</li>
+						<li class="list-item fs-5 lh-base">Den motiverende samtale - Psykiatrifonden</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="{% static 'site_layout/images/EFT-logo.png' %}" class="img-fluid custom-image" alt="Beskrivende tekst" style="height: 400px;">
+			</div>
+		</div>  
+	</div>
 </div>
 
 <div class="container mt-5 text-blue">
-    <h2 class="display-6 pb-4">Lære og læse mere om EFT</h3>
-    <p class="fs-5 lh-base">For at læse mere om, hvad EFT er, har jeg lavet en side, som forklarer dette koncept mere detaljeret og giver indsigt i dets anvendelse og fordele. På siden finder du en introduktion til Emotionsfokuseret Psykoterapi (EFT), en terapeutisk tilgang centreret om følelser og deres betydning for personlig vækst og relationer. Du vil lære om vigtigheden af følelsesmæssig balance, og hvordan EFT hjælper med at navigere i følelseslivet for at opnå mental og følelsesmæssig velvære. Desuden vil du finde information om, hvordan EFT fokuserer på at genetablere den følelsesmæssige forbindelse til sig selv og andre, en proces afgørende for personlig udvikling og selvindsigt. <span class="fst-italic">For mere omkring mig og min uddannelse i EFT, tryk på knappen nedenunder.</span></p>
+    <h2 class="pb-4">Lær og læs mere om EFT</h3>
+    <p class="fs-5 fw-light lh-base">For at læse mere om, hvad EFT er, har jeg lavet en side, som forklarer dette koncept mere detaljeret og giver indsigt i dets anvendelse og fordele. På siden finder du en introduktion til Emotionsfokuseret Psykoterapi (EFT), en terapeutisk tilgang centreret om følelser og deres betydning for personlig vækst og relationer. Du vil lære om vigtigheden af følelsesmæssig balance, og hvordan EFT hjælper med at navigere i følelseslivet for at opnå mental og følelsesmæssig velvære. Desuden vil du finde information om, hvordan EFT fokuserer på at genetablere den følelsesmæssige forbindelse til sig selv og andre, en proces afgørende for personlig udvikling og selvindsigt. Du kan læse mere om EFT ved at bruge linket forneden.</p>
     <div class="text-center">
-        <a href="{% url 'eft' %}" class="btn btn-info btn-large mb-3">Emotionsfokuseret psykoterapi EFT</a>
+        <a href="{% url 'eft' %}" class="btn btn-primary btn-large mb-3">Emotionsfokuseret psykoterapi</a>
     </div>
 </div>
 
@@ -95,10 +97,10 @@
 </div>
 
 
-<div class="container-fluid custom-light-yellow py-5 mt-5">
-	<div class="container mt-5 text-center text-blue">
-		<h2 class="display-6 pb-4">Lær mig at kende og jeg kan prøve at hjælpe dig</h3>
-		<p class="fs-5 lh-base"> Tag fat i mig ved at sende en sms til 26362000 hvis du har spørgsmål, eller udfyld formularen og så jeg kontakter dig. </p>
+<div class="container-fluid midnight text-white py-5 mt-5">
+	<div class="container mt-5 text-center">
+		<h2 class="display-6 pb-4">Lær mig bedre at kende</h3>
+		<p class="fs-5 fw-light lh-base"> Tag fat i mig ved at sende en sms til 26362000 hvis du har spørgsmål, eller udfyld formularen og så jeg kontakter dig. </p>
 		<a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
 	</div>
 </div>
