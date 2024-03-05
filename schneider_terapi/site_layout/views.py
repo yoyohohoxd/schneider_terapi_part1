@@ -18,12 +18,14 @@ def index(request):
             
             name = contact_form.cleaned_data['name']
             message = contact_form.cleaned_data['message']
+            phone_number = contact_form.cleaned_data['phone_number']
             email = contact_form.cleaned_data['email']
 
             html = render_to_string('site_layout/contactform.html', {
                 'name': name,
                 'message': message,
-                'email': email
+                'email': email,
+                'phone_number': phone_number
             })
 
             try:

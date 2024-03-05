@@ -2,30 +2,27 @@
 {% load static %}
 
 {% block body %}
-<div class="container-fluid sky-blue">
+<div class="container-fluid sky-blue py-5">
     <div class="container text-center">
         <div class="row align-items-center">
-            <div class="col-md-6 border-black border-bottom ">
-                <h2 class="display-6 pb-2">Terapi for både unge og voksne</h2>
+            <div class="col border-black border-bottom ">
+                <h2 class="display-6 text-uppercase pb-2">Terapi for både unge og voksne</h2>
                 <div class="d-grid col-3 mx-auto pb-3">
                     <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img src="{% static 'site_layout/images/Terapi Billede.jpeg' %}" alt="Terapibillede" class="img-fluid">
             </div>
         </div>  
     </div>
 </div>
 
-<div class="container my-5">
+<div class="container">
     <div class="row mt-5 text-black justify-content-center">
             <div class="col-md-6">
-                <h2 class="display-6 pb-3">Voksne</h2> 
+                <h2 class="display-6 text-uppercase">Voksne</h2> 
                 <p class="fs-5 fw-light lh-base pb-5">Føler du dig fastlåst i en situation og er det svært at se en vej ud af et problem? Fylder negative tanker om dig selv og begrænser de dig i at gøre det, du gerne vil? Kæmper du med et lavt selvværd og er det svært at mærke kærligheden til dig selv og få sat dine grænser? 
                     Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
             </div>
-            <div class="col-md-6 pb-5 pt-5">
+            <div class="col-md-6 py-5">
                 <p class="fs-5 fw-light lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
                 <ul class="fw-light">
                     <li class="list-item fs-5 lh-base">Bevidstgøre dine tanker og handlinger (for at ændre noget må man være bevidst om det man gør)</li>
@@ -37,10 +34,10 @@
         </div>
     </div>
 
-    <div class="container-fluid custom-light-yellow py-5 mt-5">
-        <div class="container mt-5 text-center text-blue">
-            <h2 class="display-6 pb-4">Lær mig at kende, og jeg kan prøve hjælpe dig</h3>
-            <p class="fs-5 lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
+    <div class="container-fluid midnight py-5">
+        <div class="container mt-5 text-center text-white">
+            <h2 class="text-uppercase pb-4">Lær mig bedre at kende</h3>
+            <p class="fs-5 fw-light lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
             <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
         </div>
     </div>
@@ -48,14 +45,14 @@
     <div class="container my-5">
         <div class="row mt-5 text-black justify-content-center">
                 <div class="col-md-6">
-                    <h2 class="display-6 pb-5">Unge (18-25)</h2> 
-                    <p class="fs-5 lh-base pb-5">Er du usikker på dig selv? Tænker du alt for meget på, hvad andre tænker om dig? Begrænser usikkerheden dig i at gøre det, du gerne vil? Er det svært bare at være dig eller føler du dig utilstrækkelig? <br>
+                    <h2 class="text-uppercase">Unge (18-25)</h2> 
+                    <p class="fs-5 fw-light lh-base pb-5">Er du usikker på dig selv? Tænker du alt for meget på, hvad andre tænker om dig? Begrænser usikkerheden dig i at gøre det, du gerne vil? Er det svært bare at være dig eller føler du dig utilstrækkelig? <br>
                         I samtaler med unge er identitet og selvværdsfølelse i fokus. Vi taler om det, de synes er svært, deres dagligdag, interesser, ressourcer, håb og drømme.
                         Problemstillingerne unge ofte kommer med, er mobning, selvværdsproblemer, ensomhed, føle sig anderledes, belastningsreaktioner, løsrivelse fra forældre. <br>
                         Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
                 </div>
         
-                <div class="col-md-6 pb-5 pt-5">
+                <div class="col-md-6 py-5 fw-light">
                     <p class="fs-5 lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
                     <ul>
                         <li class="list-item fs-5 lh-base">Tilbyde dig et fortroligt og trygt rum hvor du frit kan tale om dine problemer. </li>

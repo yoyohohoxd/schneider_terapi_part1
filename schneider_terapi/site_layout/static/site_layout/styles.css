@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 
-html * {
-  font-family: 'Playfair Display', serif;
-}
-
 body {
   background-color: #F6F6F4;
 }
@@ -15,8 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif !important;
 }
 
-p, div, li {
+p, div, li, a {
   font-family: 'Josefin Sans', sans-serif !important;
+}
+
+a.navbar-brand {
+  font-family: 'Playfair Display', serif !important;
 }
 
 .asteriskField {
@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
 }
 
 #id_message {
-    height: 100px;
+  height: 100px;
 }
 
 #header-background {
