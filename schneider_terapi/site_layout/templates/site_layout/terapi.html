@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block body %}
-<div class="container-fluid sky-blue py-5">
+<div class="container-fluid py-5">
     <div class="container text-center">
         <div class="row align-items-center">
             <div class="col border-black border-bottom ">
-                <h2 class="display-6 text-uppercase pb-2">Terapi for både unge og voksne</h2>
+                <h2 class="display-6 text-uppercase pb-2">Terapi</h2>
                 <div class="d-grid col-3 mx-auto pb-3">
                     <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mt-2">Kontakt mig</a>
                 </div>
@@ -17,91 +17,92 @@
 
 <div class="container">
     <div class="row mt-5 text-black justify-content-center">
-            <div class="col-md-6">
-                <h2 class="display-6 text-uppercase">Voksne</h2> 
-                <p class="fs-5 fw-light lh-base pb-5">Føler du dig fastlåst i en situation og er det svært at se en vej ud af et problem? Fylder negative tanker om dig selv og begrænser de dig i at gøre det, du gerne vil? Kæmper du med et lavt selvværd og er det svært at mærke kærligheden til dig selv og få sat dine grænser? 
-                    Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
+        <div class="col-md-6">
+            <h2 class="display-6 text-uppercase">Voksne</h2> 
+            <p class="fs-5 fw-light lh-base pb-5">Føler du dig fastlåst i en situation og er det svært at se en vej ud af et problem? Fylder negative tanker om dig selv og begrænser de dig i at gøre det, du gerne vil? Kæmper du med et lavt selvværd og er det svært at mærke kærligheden til dig selv og få sat dine grænser? 
+                Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
+        </div>
+        <div class="col-md-6 py-5">
+            <p class="fs-5 fw-light lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
+            <ul class="fw-light">
+                <li class="list-item fs-5 lh-base">Bevidstgøre dine tanker og handlinger (for at ændre noget må man være bevidst om det man gør)</li>
+                <li class="list-item fs-5 lh-base">Hjælpe dig med at forstå dine tanker, følelser og reaktioner bedre</li>
+                <li class="list-item fs-5 lh-base">Hjælpe dig med at mærke dine egne behov og grænser</li>
+                <li class="list-item fs-5 lh-base">Give støttende og respektfuld sparring til dine problemstillinger, så du finder styrke til at finde svarene i dig selv </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid midnight py-5">
+<div class="container mt-5 text-center text-white">
+    <h2 class="text-uppercase pb-4">Lær mig bedre at kende</h3>
+    <p class="fs-5 fw-light lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
+    <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
+</div>
+</div>
+
+<div class="container my-5">
+    <div class="row mt-5 text-black justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-uppercase">Unge (18-25)</h2> 
+            <p class="fs-5 fw-light lh-base pb-5">Er du usikker på dig selv? Tænker du alt for meget på, hvad andre tænker om dig? Begrænser usikkerheden dig i at gøre det, du gerne vil? Er det svært bare at være dig eller føler du dig utilstrækkelig? <br>
+                I samtaler med unge er identitet og selvværdsfølelse i fokus. Vi taler om det, de synes er svært, deres dagligdag, interesser, ressourcer, håb og drømme.
+                Problemstillingerne unge ofte kommer med, er mobning, selvværdsproblemer, ensomhed, føle sig anderledes, belastningsreaktioner, løsrivelse fra forældre. <br>
+                Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
+        </div>
+
+        <div class="col-md-6 py-5 fw-light">
+            <p class="fs-5 lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
+            <ul>
+                <li class="list-item fs-5 lh-base">Tilbyde dig et fortroligt og trygt rum hvor du frit kan tale om dine problemer. </li>
+                <li class="list-item fs-5 lh-base">Hjælpe dig med at forstå dine tanker, følelser og reaktioner bedre.</li>
+                <li class="list-item fs-5 lh-base">Hjælpe dig med bedre at mærke dine egne behov og grænser. </li>
+                <li class="list-item fs-5 lh-base">Hjælpe og støtte dig til bedre at kunne håndtere svære perioder i livet fx ved store ændringer i familien, overgange, tab. </li>
+                <li class="list-item fs-5 lh-base">Hjælpe dig til bedre at kunne regulere følelser. </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card border-0 shadow text-bg-light">
+                    <div class="card-body">
+                        <h1 class="display-1">"</h1>
+                        <blockquote class="blockquote mb-0">
+                            <p>Jeg oplevede en rigtig svær periode i mit liv og havde brug for støtte og sparring til at komme videre. Kristina gav mig den nødvendige støtte og hjalp mig til at acceptere min situation. Tak for at være der i en svær periode.</p>
+                            <footer class="blockquote-footer"><cite title="Source Title">Lise</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 py-5">
-                <p class="fs-5 fw-light lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
-                <ul class="fw-light">
-                    <li class="list-item fs-5 lh-base">Bevidstgøre dine tanker og handlinger (for at ændre noget må man være bevidst om det man gør)</li>
-                    <li class="list-item fs-5 lh-base">Hjælpe dig med at forstå dine tanker, følelser og reaktioner bedre</li>
-                    <li class="list-item fs-5 lh-base">Hjælpe dig med at mærke dine egne behov og grænser</li>
-                    <li class="list-item fs-5 lh-base">Give støttende og respektfuld sparring til dine problemstillinger, så du finder styrke til at finde svarene i dig selv </li>
-                </ul>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card border-0 shadow text-bg-light">
+                    <div class="card-body">
+                        <h1 class="display-1">"</h1>
+                        <blockquote class="blockquote mb-0">
+                            <p>I mit møde med Kristina oplevede jeg, en terapeut som hurtigt skaber en god, tryg og tillidsfuld kontakt. Kristina er empatisk og lyttende og var enormt god til at hjælpe mig med at sætte ord på mine følelser. Jeg er blevet meget klogere på hvorfor jeg reagerer som jeg gør.</p>
+                            <footer class="blockquote-footer"><cite title="Source Title">Jette</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card border-0 shadow text-bg-light">
+                    <div class="card-body">
+                        <h1 class="display-1">"</h1>
+                        <blockquote class="blockquote mb-0">
+                            <p>Mit forløb hos Kristina har været virkelig hjælpsomt. Jeg er ikke længere så kritisk overfor mig selv men oplever at kunne møde mig selv meget mere kærligt og omsorgsfuldt. Det gør en stor forskel i min hverdag.</p>
+                            <footer class="blockquote-footer"><cite title="Source Title">Morten</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid midnight py-5">
-        <div class="container mt-5 text-center text-white">
-            <h2 class="text-uppercase pb-4">Lær mig bedre at kende</h3>
-            <p class="fs-5 fw-light lh-base"> Tage fat i mig, ved at send en sms til 26362000 hvis du har spørgsmål eller udfyld formularen og jeg kontakter dig. </p>
-            <a href="{% url 'index' %}#contact_form" class="btn btn-primary btn-large mb-3">Kontakt mig</a>
-        </div>
-    </div>
-
-    <div class="container my-5">
-        <div class="row mt-5 text-black justify-content-center">
-                <div class="col-md-6">
-                    <h2 class="text-uppercase">Unge (18-25)</h2> 
-                    <p class="fs-5 fw-light lh-base pb-5">Er du usikker på dig selv? Tænker du alt for meget på, hvad andre tænker om dig? Begrænser usikkerheden dig i at gøre det, du gerne vil? Er det svært bare at være dig eller føler du dig utilstrækkelig? <br>
-                        I samtaler med unge er identitet og selvværdsfølelse i fokus. Vi taler om det, de synes er svært, deres dagligdag, interesser, ressourcer, håb og drømme.
-                        Problemstillingerne unge ofte kommer med, er mobning, selvværdsproblemer, ensomhed, føle sig anderledes, belastningsreaktioner, løsrivelse fra forældre. <br>
-                        Fylder afmagt og frustration for meget i forhold til fx partner, børn eller familie og mangler du hjælp til at ændre mønstre og dynamikker hos dig selv?</p>
-                </div>
+</div>
         
-                <div class="col-md-6 py-5 fw-light">
-                    <p class="fs-5 lh-base">Jeg vil kunne hjælpe og støtte dig med bl.a. at:</p>
-                    <ul>
-                        <li class="list-item fs-5 lh-base">Tilbyde dig et fortroligt og trygt rum hvor du frit kan tale om dine problemer. </li>
-                        <li class="list-item fs-5 lh-base">Hjælpe dig med at forstå dine tanker, følelser og reaktioner bedre.</li>
-                        <li class="list-item fs-5 lh-base">Hjælpe dig med bedre at mærke dine egne behov og grænser. </li>
-                        <li class="list-item fs-5 lh-base">Hjælpe og støtte dig til bedre at kunne håndtere svære perioder i livet fx ved store ændringer i familien, overgange, tab. </li>
-                        <li class="list-item fs-5 lh-base">Hjælpe dig til bedre at kunne regulere følelser. </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                    <div class="card border-0 shadow text-bg-light">
-                        <div class="card-body">
-                            <h1 class="display-1">"</h1>
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 shadow text-bg-light">
-                        <div class="card-body">
-                            <h1 class="display-1">"</h1>
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 shadow text-bg-light">
-                        <div class="card-body">
-                            <h1 class="display-1">"</h1>
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-    {% endblock %}
+{% endblock %}
